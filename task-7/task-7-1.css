@@ -1,0 +1,108 @@
+
+.second{
+    background-color: #55a8b3;
+    height: 7vw;
+    width: 100%;
+}
+.january{
+    height: 3vw;
+    width: 3vw;
+    margin-top: 2vw;
+    margin-left: 2vw;
+}
+.kong{
+    height: 3vw;
+}
+.box{
+    border: 1px solid #e1e5e7;
+    display: flex;
+    justify-content: space-around;
+    height: 10vw;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+.last{
+    font-size: 3vw;
+}
+.arrows{
+    height: 5vw;
+    width: 3vw;
+}
+.boos{
+    height: 79vw;
+    width: 80%;
+    border: 1px solid #e1e5e7;
+    margin: auto;
+}
+.ghost{
+    color: #fbb435;
+    font-size: 5vw;
+    text-align: center;
+    border-bottom: 1px solid #fbb435;
+    height: 10vw;
+    line-height: 10vw;
+    margin-bottom: 3vw;
+}
+.brief{
+    font-size: 4vw;
+    color: #ffffff;
+    background-color: #69d1e9;
+    height: 14vw;
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+    text-align: center;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    font-size: 3vw;
+    color: #787878;
+}
+.four{
+        text-align: center;
+ }
+.egg{
+    height: 1vw;
+    width: 1vw;
+  }
+.san{display: flex;
+    align-items: center;
+}
+.brie{
+    font-size: 4vw;
+    color: #ffffff;
+    background-color: #69d1e9;
+    height: 14vw;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8vw;
+}
+.form{
+    width: 3vw;
+    height: 6vw;
+    margin-right: 2vw;
+    margin-left: 3vw;
+}
+.monday{
+   height: 3vw;
+    width: 3vw;
+    background-color: #f0f0f0;
+    border-radius: 50%
+}
+.four{
+    display: flex;
+    height: 9vw;
+    width: 17vw;
+    margin: auto;
+    justify-content: space-between;
+ }
+.monday:hover{
+    background-color: #69d1e9;
+}

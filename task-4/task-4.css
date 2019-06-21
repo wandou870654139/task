@@ -1,0 +1,58 @@
+body{
+    background-color: #eff0f4;
+    margin: 0px;
+}
+.box1{
+    background-color: #5fc0cd;
+    height: 43px;
+    color: #fff;
+    font-size: 11px;
+    text-align: center;
+    line-height: 40px;
+}
+.deng{
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.one{
+    float: left;
+    margin-left: 4px;
+}
+.three{
+    float: right;
+    margin-right: 4px;
+}
+.box2{
+    background-color: #ffffff;
+    margin-top: 10px;
+    line-height: 36px
+}
+img{
+    margin-left: 6px;
+    margin-bottom: -3px;
+}
+.lyb{
+    border: none;
+        color: #e1e5e7;
+        outline:none;
+    border-left: 1px solid;
+}
+.box4 {
+    background-color: #5fc0cd;
+    font-size: 14px;
+    text-align: center;
+    height: 39px;
+    color: #fff;
+    line-height: 39px;
+    margin-top: 20px;
+}
+.wen{
+    font-size: 15px;
+    color:   #5fc0cd;
+    margin-top: 15px;
+    float: right;
+}
+
+
+

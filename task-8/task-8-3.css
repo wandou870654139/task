@@ -1,0 +1,260 @@
+body{
+    padding: 0;
+}
+.roof{
+    padding: 0;
+}
+.box{
+    background-color: #29b078;
+    width: 100%;
+}
+.zenith{
+    display: flex;
+    justify-content: space-between;
+}
+.text-box {
+    display: none;
+    padding-right: 15px;
+}
+@media screen and (max-width: 780px){
+    .text-box {
+        display: block;
+    }
+    .zenith{
+        display: none;
+    }
+}
+.san{
+    margin-top: 1px;
+    height: 28px;
+    width: 114px;
+    margin-right: 6px;
+}
+.jnshu{
+    height: 50px;
+    width: 99px;
+}
+li a:hover {
+    color: #ffffff;
+}
+.phone{
+    font-size: 5px;
+    color: #29b078;
+    margin-top: 6px;
+}
+.gbs{
+    background-color:transparent;
+    padding: 0;
+}
+.epiboly{
+    width: 100%;
+    background-color: #29b078;
+}
+.navbar-brand {
+    font-size: 1rem;
+    width: 100%;
+}
+.navbar-toggler {
+    float: right;
+    margin-top: 5px;
+}
+.active {
+    color: #ffffff;
+}
+.nav-link {
+    color: #ffffff;
+    text-align: center;
+    height: 5rem;
+    line-height: 5rem;
+}
+.recommend {
+    width: 100%;
+}
+.tudou{
+    height: 130px;
+    width: 150px;
+}
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+@media screen and (min-width: 992px) {
+    .box{
+        display: flex;
+        height: 5rem;
+        justify-content: space-between;
+    }
+    .imaginary{
+        border-left:1px dashed #ffffff;
+    }
+    .potato {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+}
+@media screen and (max-width: 570px){
+    .jnshu{
+        margin-left: 15px;
+    }
+}
+.nav-link {
+    padding: 0;
+    border-bottom:4px solid #29b078;
+}
+.navbar-toggler {
+    float: right;
+    margin-top: 5px;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #ffffff;
+    height: 5rem;
+    line-height: 5rem;
+}
+.nav-link:hover{
+    border-bottom:4px solid #ffffff;
+}
+.top{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 100%;
+}
+.top-a{
+    color: #29b078;
+}
+.card-head{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+.body-a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+    background-color: transparent;
+}
+.body-b{
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    margin: 9px;
+    border: 1px solid #ff650e;
+}
+.body-c{
+    color: #26a26f;
+    text-decoration: none;
+    background-color: transparent;
+}
+.body-a:hover .body-b {
+    background-color: #f9a372;
+}
+.body-a a:hover {
+    text-decoration:none;
+    color: #ff650e;
+}
+.body-b:hover {
+    text-decoration:none;
+    color: #ff650e;
+}
+
+.card-bod{
+    padding: 0.25rem;
+}
+.car{
+    border:1px solid #ededed;
+    margin-bottom: 1rem;
+}
+.potato{
+    text-align: center;
+}
+.potato-a{
+    font-size: 13px;
+    color: #b3b3b3;
+    padding-right: 60px;
+    padding-left: 60px;
+    margin-top: 20px;
+}
+.potato-1{
+    border:1px solid #ededed;
+}
+.card-ab{
+    border:1px solid #ededed;
+}
+.potato-2{
+    font-size: 13px;
+    color: #b3b3b3;
+    padding: 30px 70px 20px 70px;
+}
+.body-z{
+    height: 5vw;
+ }
+.tail{
+    background-color: #29b078;
+}
+.tail-a{
+    color: white;
+    font-size: 12px;
+    padding-top: 15px;
+    display: block;
+}
+.tail-b{
+    color: white;
+    font-size: 12px;
+    background-color: #29b078;
+    padding-top: 47px;
+}
+.tail-c{
+    color: white;
+    font-size: 12px;
+    padding-top: 15px;
+    display: block;
+}
+.fail-g{
+    width:  73px;
+    height: 73px;
+    margin-bottom: 0.5rem;
+}
+.tail-f{
+    color: white;
+    font-size: 12px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    display: block;
+}
+.copyright{
+    width: 100%;
+    height: 20px;
+    background-color: #29b078;
+    border-top:1px solid #FFFFFF;
+}
+.tail-z{
+    justify-content: center;
+}
+.tail-i{
+    margin-right: 1.2rem;
+}
+.tail-i:hover{
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 4px;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #ffffff;
+}
+.tail-e{
+    font-size: 12px;
+    background-color: #29b078;
+    color: #FFFFFF;
+    text-align: center;
+}
+.tail-h:hover{
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 4px;
+}
