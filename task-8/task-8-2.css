@@ -161,22 +161,23 @@ body{
     padding-bottom: 10px;
 }
 .items-January{
-    background: url("img/beijing.png");
-    grid-column-start: 6;
+    background: url("img/beijing,1.png");
+    grid-column-start: 5;
     grid-column-end: 1;
     background-repeat: no-repeat;
+    margin: 15px 0px 0px 8px;
 }
 .items-February{
     padding-top: 1.3vh;
-    grid-column-start: 12;
-    grid-column-end: 6;
+    grid-column-start: 11;
+    grid-column-end: 5;
+    margin: 16px 0px 0px 0px;
 }
 .February-a{
-    font-size: 14px;
+    font-size: 13px;
 }
 .February-b{
     font-size: 13px;
-    word-break: break-all;
 }
 .items-March{
     grid-column-start: 6;
