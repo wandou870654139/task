@@ -11,7 +11,6 @@ body{
 .nav-{
     display: flex;
     justify-content: space-between;
-    padding: 0;
 }
 .nav-a{
     color: #ffffff;
@@ -29,7 +28,6 @@ body{
 .nav-e{
     display: flex;
     justify-content: flex-end;
-    background-color: #f9f9f9;
 }
 .nav-c:hover{
     background-color: #ffffff;
@@ -73,11 +71,10 @@ body{
     background-color:#f9f9f9;
 }
 .epiboly-a{
-    background-color: #f9f9f9;
+    background-color: #f3f3f3;
 }
 .gbs{
     background-color:transparent;
-    padding: 0;
 }
 .navbar-light .navbar-brand {
     color: rgba(0,0,0,.9);
@@ -89,7 +86,6 @@ body{
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-end;
-    padding: 0;
 }
 @media screen and (min-width: 992px) {
     .box{
@@ -107,6 +103,15 @@ body{
         margin-right: 40px;
     }
 
+}
+.text {
+    text-align: center!important;
+}
+
+@media (min-width: 992px) {
+    .header-4 {
+        margin-left: 33.333333%;
+    }
 }
 @media screen and (max-width: 992px){
     .navbar-light .navbar-nav .nav-link {
@@ -136,10 +141,11 @@ margin-bottom:15px;
     background-color: #fff;
     text-align: center;
     border-radius: 10px;
-    border: 1px c;
+    border: 1px;
 }
 .box{
     width: 100%;
+    background-color: #f3f3f3;
 }
 .subnav{
     display: flex;
@@ -184,11 +190,23 @@ margin-bottom:15px;
     color: #ff7f02;
 }
 .subnav-y{
-    padding: 0;
     margin-bottom: 3rem;
 }
 .subnav-1{
     color: #cccccc;
+}
+.header-1{
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+}
+.header-2{
+    padding-bottom: 0.5rem;
+}
+.header-3{
+    padding-bottom: 1rem;
+}
+.header-4{
+    padding-bottom: 1rem;
 }
 .header{
     display: flex;
@@ -199,4 +217,56 @@ margin-bottom:15px;
     height: 15px;
     background: #1d7ad9;
     margin-right: 5px;
+}
+.header-b{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: #1d7ad9;
+}
+.header-f{
+    width: 138px;
+    height: 34px;
+    padding: 0.3rem 3rem 0.3rem 1rem;
+    background-image: url(img/d.png);
+    background-repeat: no-repeat;
+    background-position: 6rem;
+    color: #999999;
+    outline: none;
+}
+select {
+    -webkit-appearance: none;
+}
+.header-c{
+    background-color: #f3f3f3;
+}
+input[type="radio"] + label::before {
+    content: "\a0"; /*不换行空格*/
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+    width: 1em;
+    height: 1em;
+    margin-right: .4em;
+    border-radius: 50%;
+    border: 1px solid #d7d7d7;/*设置没有点击时 出来的效果*/
+    text-indent: .15em;
+    line-height: 1;
+}
+input[type="radio"]:checked + label::before {
+    background-color: #01cd78;
+    background-clip: content-box;
+    padding: .2em;
+    border: 6.5px solid #1d7ad9;
+}
+input[type="radio"] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+.size-a{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: #1d7ad9;
+}
+.size{
+    background-color: #f3f3f3;
 }
