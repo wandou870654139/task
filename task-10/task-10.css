@@ -19,6 +19,7 @@ body{
 }
 .nav-a{
     color: #ffffff;
+    font-size: 12px;
 }
 .nav-c{
     color: #ffffff;
@@ -29,6 +30,9 @@ body{
     color: #ffffff;
     border-right: 1px solid #ffffff;
     padding: 6px 10px;
+}
+.diandian{
+    margin-left: 4px;
 }
 .nav-e{
     display: flex;
@@ -137,6 +141,7 @@ body{
 .text {
     text-align: center!important;
 }
+
 .size-2{
 padding-left: 5px;
 }
@@ -272,7 +277,9 @@ padding-left: 5px;
     border: 1px solid #e6e6e6;
     align-items: baseline;
     color: #737374;
-
+}
+.header-9{
+    padding-left: 12px;
 }
 .header-a{
     width: 3px;
