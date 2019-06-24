@@ -1,0 +1,35 @@
+.box{
+    width: 800px;
+    height: 800px;
+    background-color: antiquewhite;
+}
+.box-a{
+    width: 100px;
+    height: 100px;
+    background-color: #29b078;
+    border: 5px solid #111111;
+}
+.box-b{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border: 5px solid #111111;
+}
+.box-c{
+    width: 100px;
+    height: 100px;
+    background-color: #1d7ad9;
+    border: 5px solid #111111;
+}
+.box-d{
+    width: 100px;
+    height: 100px;
+    background-color: #a3a3a3;
+    border: 5px solid #111111;
+}
+.box-e{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    border: 5px solid #111111;
+}
