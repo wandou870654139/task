@@ -20,15 +20,15 @@ body{
 .nav-a{
     color: #ffffff;
 }
-.nav-b{
-    border-left:1px solid #ffffff;
-    border-right:1px solid #ffffff;
-}
 .nav-c{
     color: #ffffff;
+    border-left:1px solid #ffffff;
+    padding: 6px 10px;
 }
 .nav-d{
     color: #ffffff;
+    border-right: 1px solid #ffffff;
+    padding: 6px 10px;
 }
 .nav-e{
     display: flex;
@@ -94,50 +94,62 @@ body{
     justify-content: flex-end;
 }
 @media screen and (min-width: 992px) {
-    .box{
+    .box {
         display: flex;
-        height:5rem;
+        height: 5rem;
         justify-content: space-between;
     }
-    .nav-f{
+
+    .nav-f {
         margin-right: 40px;
     }
-    .nav-h{
+
+    .nav-h {
         margin-right: 40px;
     }
-    .nav-i{
+
+    .nav-i {
         margin-right: 40px;
     }
+
     .header-4 {
         margin-left: 33.333333%;
     }
+
     .header-3 {
         padding-bottom: 0px;
     }
+
     .Counterparts-7 {
         margin-right: 1.3rem;
     }
+
     .Counterparts-5 {
         position: relative;
         top: -26px;
         text-align: center;
     }
+
+    .offset-lg-2 {
+        margin-left: 16.56667%;
+    }
 }
 .text {
     text-align: center!important;
 }
-
+.size-2{
+padding-left: 3px;
+}
 @media screen and (max-width: 992px) {
     .navbar-light .navbar-nav .nav-link {
         margin-bottom: 15px;
     }
-
     .Counterparts-2 {
         padding-bottom: 1.5rem;
     }
 
     .Counterparts-6 {
-        margin-left: 2rem;
+        margin-left: 1rem;
     }
 
     .header-8 {
@@ -229,9 +241,11 @@ body{
 }
 .header-1{
     padding-top: 2rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.9rem;
     background-color: #fbfcff;
     border: 1px solid #e6e6e6;
+    align-items: baseline;
+    color: #737374;
 }
 .header-2{
     padding-bottom: 0.5rem;
@@ -251,11 +265,14 @@ body{
 }
 .header-8{
     padding-top: 2rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: 1rem;
     padding-left: 0.7rem;
     display: flex;
     background-color: #fbfcff;
     border: 1px solid #e6e6e6;
+    align-items: baseline;
+    color: #737374;
+
 }
 .header-a{
     width: 3px;
@@ -270,7 +287,7 @@ body{
     margin-left: 8px;
 }
 .header-f{
-    width: 138px;
+    width: 129px;
     height: 34px;
     padding: 0.3rem 3rem 0.3rem 1rem;
     background-image: url(img/d.png);
@@ -287,22 +304,22 @@ select {
     border: 1px solid #e8e8e8;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
+    display: flex;
 }
 input[type="radio"] + label::before {
-    content: "\a0"; /*不换行空格*/
+    content: "\a0";
     display: inline-block;
     vertical-align: middle;
     font-size: 18px;
-    width: 1em;
+    width: 1.1em;
     height: 1em;
     margin-right: .4em;
     border-radius: 50%;
-    border: 1px solid #d7d7d7;/*设置没有点击时 出来的效果*/
+    border: 1px solid #d7d7d7;
     text-indent: .15em;
     line-height: 1;
 }
 input[type="radio"]:checked + label::before {
-    background-color: #01cd78;
     background-clip: content-box;
     padding: .2em;
     border: 6.5px solid #1d7ad9;
@@ -319,9 +336,6 @@ input[type="radio"] {
 }
 .size{
     background-color: #f3f3f3;
-    border-left: 1px solid #e6e6e6;
-    border-right: 1px solid #e6e6e6;
-    border-top:  1px solid #e6e6e6;
 }
 .Counterparts{
     background-color: #fbfcff;
@@ -329,6 +343,7 @@ input[type="radio"] {
     border-left: 1px solid #e6e6e6;
     border-right: 1px solid #e6e6e6;
     border-top:  1px solid #e6e6e6;
+    color: #737374;
 }
 .Counterparts-1{
     padding-bottom: 1rem;
@@ -344,6 +359,7 @@ input[type="radio"] {
     border-left: 1px solid #e6e6e6;
     border-right: 1px solid #e6e6e6;
     border-bottom: 1px solid #e6e6e6;
+    color: #737374;
 }
 .Counterparts-5{
     text-align: center;
@@ -352,7 +368,6 @@ input[type="radio"] {
     background-color: #fbfcff;
 }
 input[type="radio"]:checked + label::before {
-    background-color: #01cd78;
     background-clip: content-box;
     padding: .2em;
     border: 6.5px solid #1d7ad9;
@@ -397,6 +412,7 @@ input[type="radio"]:checked + label::before {
 .copyright-c{
     color: #999999;
     font-size: 14px;
+    margin-right: 18px;
 }
 .copyright-3{
     display: flex;
@@ -439,5 +455,7 @@ input[type="radio"]:checked + label::before {
 }
 label {
     display: inline-block;
-    margin-bottom: .5rem;
-    margin-top: .5rem;}
+  }
+.guild:hover{
+    background-color: #1d7ad9;
+}
