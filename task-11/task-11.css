@@ -58,6 +58,11 @@ footer .third-party {
     text-align: center;
     font-size: 15px;
     color: #b1b1b1; }
+  footer .third-party .third-party-c {
+    height: 10px;
+    width: 20%;
+    border-bottom: 1px solid #b1b1b1;
+    margin-left: 15px; }
 footer .landing {
   display: flex;
   font-size: 12px;
