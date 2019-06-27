@@ -14,15 +14,15 @@ header {
     margin-bottom: 4px;
     margin-left: 26px;
     font-size: 16px; }
-  header img {
-    margin-left: 10px; }
+    header span img {
+      margin-left: 10px; }
 
 main .frame {
   margin-top: 10px;
   line-height: 46px;
   background-color: #ffffff;
   color: #e1e5e7; }
-main .shouji {
+main .cellphone {
   margin-left: 10px;
   margin-bottom: -4px;
   margin-right: 4px; }
