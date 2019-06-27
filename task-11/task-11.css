@@ -40,7 +40,7 @@ main .lyb {
   border-left: 1px solid; }
 main .disembark {
   background-color: #1ba2ea;
-  font-size: 14px;
+  font-size: 13px;
   text-align: center;
   height: 39px;
   color: #fff;
@@ -48,7 +48,7 @@ main .disembark {
   margin-top: 20px;
   border-radius: 5px; }
 main .register {
-  font-size: 10px;
+  font-size: 16px;
   color: #b1b1b1;
   margin-top: 5px;
   display: flex;
