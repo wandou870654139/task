@@ -76,7 +76,6 @@ footer .third-party {
 footer .landing {
   display: flex;
   font-size: 12px;
-  color: #b1b1b1;
   justify-content: space-evenly; }
   footer .landing .wechat {
     text-align: center; }
