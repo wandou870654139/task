@@ -1,24 +1,24 @@
 body {
-  background-color: #eff0f4;
   max-width: 720px;
-  margin: auto; }
+  margin: auto;
+  background-color: #eff0f4; }
 
 header {
-  background-color: #1ba2ea;
-  height: 44px;
-  color: #fff;
-  font-size: 11px;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  height: 44px;
+  font-size: 12px;
+  background-color: #1ba2ea;
+  color: #fff; }
   header span {
-    font-size: 16px;
     margin-bottom: 4px;
-    margin-left: 26px; }
+    margin-left: 26px;
+    font-size: 16px; }
 
 main .frame {
-  background-color: #ffffff;
   margin-top: 10px;
   line-height: 46px;
+  background-color: #ffffff;
   color: #e1e5e7; }
 main .shouji {
   margin-left: 10px;
@@ -29,49 +29,49 @@ main img {
   margin-bottom: -4px;
   margin-right: 3px; }
 main .frame-below {
-  background-color: #ffffff;
   margin-top: 1px;
   line-height: 46px;
+  background-color: #ffffff;
   color: #e1e5e7; }
 main .lyb {
-  border: none;
   color: #020;
+  border: none;
   outline: none;
   border-left: 1px solid; }
 main .disembark {
-  background-color: #1ba2ea;
-  font-size: 16px;
-  text-align: center;
   height: 40px;
-  color: #fff;
-  line-height: 40px;
   margin-top: 20px;
+  font-size: 16px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #1ba2ea;
+  color: #fff;
   border-radius: 5px; }
 main .register {
-  font-size: 16px;
-  color: #b1b1b1;
-  margin-top: 5px;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-top: 5px;
+  font-size: 16px;
+  color: #b1b1b1; }
 
 footer .third-party {
-  margin-top: 10rem;
   display: flex;
   justify-content: center;
+  margin-top: 10rem;
   margin-bottom: 1rem; }
   footer .third-party .string {
     height: 10px;
     width: 20%;
     border-bottom: 1px solid #b1b1b1; }
   footer .third-party .login {
-    text-align: center;
+    margin: 0 14px;
     font-size: 16px;
-    color: #b1b1b1;
-    margin: 0 14px; }
+    text-align: center;
+    color: #b1b1b1; }
 footer .landing {
   display: flex;
-  font-size: 12px;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  font-size: 12px; }
   footer .landing .wechat {
     text-align: center; }
 
