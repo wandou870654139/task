@@ -5,7 +5,7 @@ body{
 }
 header {
       background-color: #1ba2ea;
-      height: 43px;
+      height: 44px;
       color: #fff;
       font-size: 11px;
       display: flex;
@@ -13,14 +13,14 @@ header {
       span {
         font-size: 16px;
         margin-bottom: 4px;
-        margin-left: 25px;
+        margin-left: 26px;
       }
   }
 main {
   .frame {
     background-color: #ffffff;
     margin-top: 10px;
-    line-height: 36px;
+    line-height: 46px;
     color: #e1e5e7;
   }
   .shouji{
@@ -29,14 +29,14 @@ main {
     margin-right: 4px;
   }
   img {
-    margin-left: 7px;
+    margin-left: 6px;
     margin-bottom: -4px;
     margin-right: 3px;
   }
-  .frame-a {
+  .frame-below {
     background-color: #ffffff;
     margin-top: 1px;
-    line-height: 36px;
+    line-height: 46px;
     color: #e1e5e7;
   }
   .lyb {
@@ -48,11 +48,11 @@ main {
   }
   .disembark{
     background-color: #1ba2ea;
-    font-size: 12px;
+    font-size: 16px;
     text-align: center;
-    height: 39px;
+    height: 40px;
     color: #fff;
-    line-height: 39px;
+    line-height: 40px;
     margin-top: 20px;
     border-radius: 5px;
   }
@@ -70,22 +70,16 @@ footer{
     display: flex;
     justify-content: center;
     margin-bottom: 1rem;
-    .third-party-a {
+    .string {
       height: 10px;
       width: 20%;
       border-bottom: 1px solid #b1b1b1;
-      margin-right: 15px;
     }
-    .third-party-b {
+    .login {
       text-align: center;
-      font-size: 15px;
+      font-size: 16px;
       color: #b1b1b1;
-    }
-    .third-party-c {
-      height: 10px;
-      width: 20%;
-      border-bottom: 1px solid #b1b1b1;
-      margin-left: 15px;
+      margin: 0 14px;
     }
   }
   .landing {
