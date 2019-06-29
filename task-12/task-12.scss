@@ -1,7 +1,7 @@
 @mixin constraint {
   max-width: 780px;
   min-width: 320px;
-  line-height: 55px;
+  line-height: 56px;
 }
 @mixin fixation{
   position: fixed;
@@ -12,14 +12,14 @@
 }
 @mixin location{
   width: 43%;
-  line-height: 55px;
+  line-height: 56px;
   text-align: center;
   border-radius: 8px;
 }
 @mixin height{
-    height: 55px;
-    line-height: 55px;
-  }
+  height: 56px;
+  line-height: 56px;
+}
 @mixin interval{
   padding-right: 20px;
   margin-right: 4px;
@@ -39,15 +39,13 @@ header{
   height: 50px;
   color: #ffffff;
   background-color: #5fc0cd;
-
-
   .homepage{
     margin-right: 5px;
   }
   img{
     height: 24px;
-    width: 15px;
-    margin-left: 5px;
+    width: 16px;
+    margin-left: 6px;
   }
 }
 main {
@@ -58,89 +56,91 @@ main {
     margin-top: 50px;
     background: url("IMG/c.png");
     background-size: 100% 100%;
+
+    .theme-picture {
+      height: 99px;
+      width: 99px;
+      margin: 0 1.5rem;
+    }
   }
-  .theme-picture {
-    height: 99px;
-    width: 99px;
-    margin: 0 1.5rem;
+  .size{
+    font-size: 16px;
+    color: #ffffff;
+    .coordinate {
+      height: 14px;
+      width: 10px;
+    }
   }
   .name {
     color: #ffffff;
-  }
-  .age {
-    font-size: 14px;
-    color: #ffffff;
-  }
-  .site .site-peking {
-    font-size: 15px;
-    color: #ffffff;
-  }
-  .site img {
-    height: 14px;
-    width: 10px;
+    .age {
+      font-size: 14px;
+      color: #ffffff;
+    }
   }
   .skill {
     @include height;
     border-bottom: 1px solid #e1e5e7;
-  }
-  .star-reside{
-    padding-right: 10px;
-    border-right: 1px solid #e1e5e7;
+    img {
+      height: 16px;
+      margin-left: 10px;
+      margin-right: 9px;
     }
-  .skill-picture {
-    height: 13px;
-    margin-left: 10px;
-    margin-right: 9px;
   }
   .star {
     @include height;
     margin-left: 20px;
+    .star-symbol {
+      height: 14px;
+      width: 14px;
+      margin-top: 4px;
+      .star-reside{
+        padding-right: 10px;
+        border-right: 1px solid #e1e5e7;
+
+      }
+    }
   }
-  .star .star-symbol {
+  .star-second {
     height: 14px;
-    width: 13px;
-    margin-top: 4px;
-  }
-  .star .star-second {
-    height: 14px;
-    width: 13px;
+    width: 14px;
     margin-left: 4px;
     margin-top: 4px;
   }
+
   .year {
     @include height;
     border-top: 1px solid #e1e5e7;
-  }
-  .work {
-    @include interval;
-  }
-  .hour{
-    color: red;
+    .work {
+      @include interval;
+    }
+    .hour{
+      color: red;
+    }
   }
   .introduce {
     display: flex;
     align-items: center;
     border-top: 1px solid #e1e5e7;
     border-bottom: 1px solid #e1e5e7;
-  }
-  .introduce-self {
-    @include interval;
-    min-width: 65px;
-
+    .introduce-self {
+      @include interval;
+      min-width: 65px;
+    }
   }
 }
 footer {
   @include fixation;
   @include constraint;
-  padding-bottom: 10px;
   bottom: 0;
+  padding-bottom: 10px;
   background-color: #ffffff;
   .word{
     @include location;
     @include height;
-    border: solid;
     color: #5fc0cd;
     background-color: #ffff;
+    border: solid;
   }
   .phone{
     @include location;

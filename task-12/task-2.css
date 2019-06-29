@@ -1,0 +1,144 @@
+body {
+  max-width: 780px;
+  min-width: 320px;
+  margin: auto; }
+
+header .thetop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 780px;
+  min-width: 320px;
+  z-index: 1; }
+  header .thetop .maximum {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    background-color: #5fc0cd; }
+    header .thetop .maximum .zenith {
+      display: flex;
+      background-color: #55a8b3;
+      border-radius: 6px; }
+header .empty {
+  width: 48px; }
+header img {
+  height: 26px;
+  width: 24px;
+  margin-right: 24px; }
+header .employer {
+  height: 50px;
+  width: 90px;
+  font-size: 22px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 6px;
+  color: #ffff;
+  background: #55a8b3; }
+header .nursing {
+  height: 50px;
+  width: 90px;
+  font-size: 22px;
+  line-height: 50px;
+  text-align: center;
+  color: #5fc0cd;
+  background: #fff;
+  border-radius: 6px; }
+
+.skip {
+  display: flex;
+  justify-content: center;
+  height: 66px;
+  width: 100%; }
+  .skip .place {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    height: 66px;
+    font-size: 18px; }
+    .skip .place .pull-down {
+      width: 100%;
+      font-size: 17px;
+      text-align-last: center;
+      color: #999999;
+      border-bottom: 1px solid #e1e5e7;
+      border-right: 1px solid #e1e5e7;
+      border-left: 1px solid #e1e5e7; }
+
+main {
+  margin-bottom: 100px; }
+  main .loin {
+    margin-top: 136px;
+    font-size: 16px; }
+    main .loin .first {
+      line-height: 38px; }
+  main .service {
+    display: flex;
+    align-items: center;
+    font-size: 18px; }
+  main .date {
+    height: 24px;
+    width: 24px;
+    margin-right: 10px; }
+  main .coordinate {
+    width: 19px;
+    height: 24px; }
+  main img {
+    height: 34px;
+    width: 20px; }
+  main .serve {
+    margin-left: 4px;
+    color: #999999; }
+  main .coat {
+    line-height: 38px;
+    padding-right: 0px; }
+  main .thirdly {
+    margin-left: 36px;
+    font-size: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  main .coordinates {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    border-bottom: 1px solid #e1e5e7; }
+  main .peking {
+    margin-left: 16px;
+    color: #999999; }
+  main .time {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: red;
+    border-bottom: 1px solid #e1e5e7; }
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-width: 780px;
+  min-width: 320px;
+  height: 100px;
+  background-color: #f8fafb; }
+  footer .home {
+    text-align: center;
+    color: #5fc0cd; }
+    footer .home img {
+      height: 30px;
+      width: 36px; }
+  footer img {
+    height: 66px;
+    width: 66px; }
+  footer .night {
+    text-align: center;
+    color: #999999; }
+    footer .night img {
+      height: 30px;
+      width: 36px; }
+
+/*# sourceMappingURL=task-2.css.map */

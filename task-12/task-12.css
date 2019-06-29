@@ -11,7 +11,7 @@ header {
   width: 100%;
   max-width: 780px;
   min-width: 320px;
-  line-height: 55px;
+  line-height: 56px;
   top: 0;
   height: 50px;
   color: #ffffff;
@@ -20,8 +20,8 @@ header {
     margin-right: 5px; }
   header img {
     height: 24px;
-    width: 15px;
-    margin-left: 5px; }
+    width: 16px;
+    margin-left: 6px; }
 
 main .theme {
   display: flex;
@@ -30,69 +30,69 @@ main .theme {
   margin-top: 50px;
   background: url("IMG/c.png");
   background-size: 100% 100%; }
-main .theme-picture {
-  height: 99px;
-  width: 99px;
-  margin: 0 1.5rem; }
+  main .theme .theme-picture {
+    height: 99px;
+    width: 99px;
+    margin: 0 1.5rem; }
+main .size {
+  font-size: 16px;
+  color: #ffffff; }
+  main .size .coordinate {
+    height: 14px;
+    width: 10px; }
 main .name {
   color: #ffffff; }
-main .age {
-  font-size: 14px;
-  color: #ffffff; }
-main .site .site-peking {
-  font-size: 15px;
-  color: #ffffff; }
-main .site img {
-  height: 14px;
-  width: 10px; }
+  main .name .age {
+    font-size: 14px;
+    color: #ffffff; }
 main .skill {
-  height: 55px;
-  line-height: 55px;
+  height: 56px;
+  line-height: 56px;
   border-bottom: 1px solid #e1e5e7; }
-main .star-reside {
-  padding-right: 10px;
-  border-right: 1px solid #e1e5e7; }
-main .skill-picture {
-  height: 13px;
-  margin-left: 10px;
-  margin-right: 9px; }
+  main .skill img {
+    height: 16px;
+    margin-left: 10px;
+    margin-right: 9px; }
 main .star {
-  height: 55px;
-  line-height: 55px;
+  height: 56px;
+  line-height: 56px;
   margin-left: 20px; }
-main .star .star-symbol {
+  main .star .star-symbol {
+    height: 14px;
+    width: 14px;
+    margin-top: 4px; }
+    main .star .star-symbol .star-reside {
+      padding-right: 10px;
+      border-right: 1px solid #e1e5e7; }
+main .star-second {
   height: 14px;
-  width: 13px;
-  margin-top: 4px; }
-main .star .star-second {
-  height: 14px;
-  width: 13px;
+  width: 14px;
   margin-left: 4px;
   margin-top: 4px; }
 main .year {
-  height: 55px;
-  line-height: 55px;
+  height: 56px;
+  line-height: 56px;
   border-top: 1px solid #e1e5e7; }
-main .work {
-  padding-right: 20px;
-  margin-right: 4px;
-  margin-left: 20px;
-  color: #e1e5e7;
-  border-right: 1px solid #e1e5e7; }
-main .hour {
-  color: red; }
+  main .year .work {
+    padding-right: 20px;
+    margin-right: 4px;
+    margin-left: 20px;
+    color: #e1e5e7;
+    border-right: 1px solid #e1e5e7; }
+  main .year .hour {
+    color: red; }
 main .introduce {
   display: flex;
   align-items: center;
   border-top: 1px solid #e1e5e7;
   border-bottom: 1px solid #e1e5e7; }
-main .introduce-self {
-  padding-right: 20px;
-  margin-right: 4px;
-  margin-left: 20px;
-  color: #e1e5e7;
-  border-right: 1px solid #e1e5e7;
-  min-width: 65px; }
+  main .introduce .introduce-self {
+    padding-right: 20px;
+    margin-right: 4px;
+    margin-left: 20px;
+    color: #e1e5e7;
+    border-right: 1px solid #e1e5e7;
+    min-width: 65px; }
 
 footer {
   position: fixed;
@@ -102,23 +102,23 @@ footer {
   width: 100%;
   max-width: 780px;
   min-width: 320px;
-  line-height: 55px;
-  padding-bottom: 10px;
+  line-height: 56px;
   bottom: 0;
+  padding-bottom: 10px;
   background-color: #ffffff; }
   footer .word {
     width: 43%;
-    line-height: 55px;
+    line-height: 56px;
     text-align: center;
     border-radius: 8px;
-    height: 55px;
-    line-height: 55px;
-    border: solid;
+    height: 56px;
+    line-height: 56px;
     color: #5fc0cd;
-    background-color: #ffff; }
+    background-color: #ffff;
+    border: solid; }
   footer .phone {
     width: 43%;
-    line-height: 55px;
+    line-height: 56px;
     text-align: center;
     border-radius: 8px;
     color: #ffff;

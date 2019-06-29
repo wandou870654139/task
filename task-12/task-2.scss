@@ -1,176 +1,174 @@
-body{
-  margin: 0;
-  padding: 0;
+@mixin restrict{
+  max-width: 780px;
+  min-width: 320px;
 }
-.maximum{
-  background-color: #5fc0cd;
-  height: 70px;
+@mixin flex{
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
-.boos{
+@mixin wire{
+  border-bottom: 1px solid #e1e5e7;
+  border-right: 1px solid #e1e5e7;
+}
+@mixin roof{
+  height: 50px;
+  width: 90px;
+  font-size: 22px;
+  line-height: 50px;
+  text-align: center;
+}
+body{
+  @include restrict;
+  margin: auto;
+}
+header {
+  .thetop {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    @include restrict;
+    z-index: 1;
+    .maximum {
+      @include flex;
+      justify-content: space-between;
+      height: 70px;
+      background-color: #5fc0cd;
+      .zenith {
+        display: flex;
+        background-color: #55a8b3;
+        border-radius: 6px;
+      }
+    }
+  }
+  .empty {
+    width: 48px;
+  }
+  img {
+    height: 26px;
+    width: 24px;
+    margin-right: 24px;
+  }
+  .employer {
+    @include roof;
+    border-radius: 6px;
+    color: #ffff;
+    background: #55a8b3;
+  }
+  .nursing {
+    @include roof;
+    color: #5fc0cd;
+    background: #fff;
+    border-radius: 6px;
+  }
+}
+.skip {
   display: flex;
-  border-radius: 6px;
-  background-color: #55a8b3;
-}
-.thetop{
-  position: fixed;
-  top: 0;
+  justify-content: center;
+  height: 66px;
   width: 100%;
-  z-index: 1;
-}
-.loin{
-  margin-top: 135px;
-}
-.kong{
-  width: 48px;
-}
-.box5{
+     .place {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+      height: 66px;
+      font-size: 18px;
+      .pull-down {
+        width: 100%;
+        font-size: 17px;
+        text-align-last: center;
+        color: #999999;
+        @include wire;
+        border-left: 1px solid #e1e5e7;
+      }
+    }
+  }
+main {
+  .loin {
+    margin-top: 136px;
+    font-size: 16px;
+    .first {
+      line-height: 38px;
+    }
+  }
+  .service {
+    @include flex;
+    font-size: 18px;
+  }
+  .date {
+    height: 24px;
+    width: 24px;
+    margin-right: 10px;
+  }
+  .coordinate {
+    width: 19px;
+    height: 24px;
+  }
+  img {
+    height: 34px;
+    width: 20px;
+  }
+  .serve {
+    margin-left: 4px;
+    color: #999999;
+  }
+  .coat {
+    line-height: 38px;
+    padding-right: 0px;
+  }
+  .thirdly {
+    margin-left: 36px;
+    font-size: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .coordinates {
+    @include flex;
+    font-size: 18px;
+    border-bottom: 1px solid #e1e5e7;
+  }
+  .peking {
+    margin-left: 16px;
+    color: #999999;
+  }
+  .time {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: red;
+    border-bottom: 1px solid #e1e5e7;
+  }
   margin-bottom: 100px;
 }
-.employer{
-  height: 50px;
-  background: #55a8b3;
-  width: 90px;
-  text-align: center;
-  border-radius: 6px;
-  line-height:50px;
-  color: #ffff;
-  font-size:22px;
-}
-.nursing{
-  height: 50px;
-  background: #fff;
-  width: 90px;
-  text-align: center;
-  border-radius: 6px;
-  line-height:50px;
-  color: #5fc0cd;
-  font-size:22px;
-}
-.picture{
-  margin-right: 24px;
-}
-.two{
-  height: 65px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.january{
-  display: flex;
-  justify-content: center;
-  height: 65px;
-  font-size:17px;
-  margin: 0;
-  padding: 0;
-}
-.february{
-  width: 100%;
-  text-align-last: center;
-  color: #999999;
-  border-bottom: 1px solid #e1e5e7;
-  border-right: 1px solid #e1e5e7;
-  font-size: 17px;
-}
-.march{
-  font-size:17px;
-}
-.april{
-  display: flex;
-  justify-content: center;
-  height: 65px;
-  font-size:17px;
-  margin: 0;
-  padding: 0;
-}
-.may{
-  width: 100%;
-  text-align-last: center;
-  color: #999999;
-  border-bottom: 1px solid #e1e5e7;
-  border-right: 1px solid #e1e5e7;
-}
-.june{
-  font-size:17px;
-}
-.july   {
-  display: flex;
-  justify-content: center;
-  height: 65px;
-  margin: 0;
-  padding: 0;
-  font-size: 17px;
-}
-.august{
-  width: 100%;
-  text-align-last: center;
-  color: #999999;
-  font-size: 17px;
-  border-bottom: 1px solid #e1e5e7;
-}
-.september{font-size:17px;
-}
-.first{
-  line-height: 38px;
-  padding-right: 0px;
-}
-.second{
-  font-size:17px;
-  display: flex;
-  align-items: center;
-}
-.serve{
-  margin-left: 15px;
-  color: #999999;
-}
-.thirdly{
-  font-size:17px;
-  margin-left: 35px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.fifth{
-  font-size:17px;
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid #e1e5e7;
-}
-.beijing{
-  margin-left: 15px;
-  color: #999999;
-}
-.time{
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  color: red;
-  border-bottom: 1px solid #e1e5e7;
-}
-.monday{
+footer{
+    @include flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    @include restrict;
+    height: 100px;
+    background-color: #f8fafb;
+    .home {
+      text-align: center;
+      color: #5fc0cd;
+      img{
+        height: 30px;
+        width: 36px;
+      }
+    }
+    img{
+      height: 66px;
+      width: 66px;
+    }
+    .night {
+      text-align: center;
+      color: #999999;
+      img{
+        height: 30px;
+        width: 36px;
+      }
+    }
+  }
 
-}
-.tail{
-  height: 100px;
-  background-color: #f8fafb;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-.home{
-  text-align: center;
-  color: #5fc0cd;
-}
-.night{
-  text-align: center;
-  color: #999999;
-}
-select{
-  border:none;
-}
