@@ -17,6 +17,7 @@
   line-height: 50px;
   text-align: center;
 }
+$color: #ffffff;
 body{
   @include restrict;
   margin: auto;
@@ -51,13 +52,13 @@ header {
   .employer {
     @include roof;
     border-radius: 6px;
-    color: #ffff;
+    color: $color;
     background: #55a8b3;
   }
   .nursing {
     @include roof;
     color: #5fc0cd;
-    background: #fff;
+    background: $color;
     border-radius: 6px;
   }
 }

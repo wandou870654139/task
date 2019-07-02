@@ -1,0 +1,134 @@
+@mixin flex{
+  display: flex;
+  align-items: center;
+}
+html {
+  overflow: hidden;
+  background-color: #eff0f4;
+}
+body{
+  max-width: 780px;
+  min-width: 320px;
+  margin: auto;
+  overflow: hidden;
+  p{
+  margin: 0;
+    padding-bottom: 5px;
+}
+}
+header {
+  .top {
+    @include flex;
+    justify-content: space-between;
+    height: 60px;
+    font-size: 20px;
+    color: aliceblue;
+    border-bottom: 1px solid #f0f0f0;
+    background-color: #29bde0;
+    img {
+      height: 26px;
+      width: 26px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+  .chest {
+    width: 100%;
+    background-color: #29bde0;
+    .undercover {
+      display: flex;
+      justify-content: center;
+      padding: 20px 20px;
+      img {
+        height: 150px;
+        width: 260px;
+
+      }
+    }
+  }
+  .text {
+    width: 75%;
+    margin: auto;
+    color: #ffc865;
+    font-size: 20px;
+    .theme{
+      padding-bottom: 30px;
+    }
+    .when {
+      font-size: 16px;
+      color: #ffffff;
+    }
+  }
+  .characters {
+    color: #ffffff;
+    font-size: 16px;
+
+  }
+}
+main {
+  .outsourcing {
+    margin: auto;
+    padding: 10px 12.5% 12px 12.5%;
+    border-bottom: 1px solid #bcbcbc;
+    .first {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      font-size: 16px;
+      color: #e0e0e0;
+      p {
+        color: #111111;
+      }
+      .hour {
+        color: #e0e0e0;
+      }
+    }
+    .night {
+      font-size: 16px;
+      color: #bcbcbc;
+    }
+  }
+}
+footer {
+  @include flex;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 46px;
+  max-width: 780px;
+  min-width: 320px;
+  background-color: #29bde0;
+  background-color: rgba(6, 142, 252, 0.6);
+  a {
+  text-decoration: none;
+    .bureau {
+      display: flex;
+      justify-content: center;
+      height: 34px;
+      line-height: 34px;
+      width: 138px;
+      font-size: 23px;
+      border-radius: 5px;
+      color: #ffffff;
+      background-color: #f66f6f;
+    }
+}
+  .recur {
+    display: flex;
+    justify-content: center;
+  }
+
+  .uploading {
+    display: flex;
+    justify-content: center;
+    height: 34px;
+    width: 138px;
+    font-size: 24px;
+    line-height: 34px;
+    color: #ffffff;
+    background-color: #fbb435;
+    border-radius: 6px;
+  }
+}
+
