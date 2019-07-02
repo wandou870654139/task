@@ -137,6 +137,7 @@ footer {
   padding-bottom: 10px;
   background-color: $color;
   .word{
+    text-decoration:none;
     @include location;
     @include height;
     color: #5fc0cd;

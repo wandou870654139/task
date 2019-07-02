@@ -107,6 +107,7 @@ footer {
   padding-bottom: 10px;
   background-color: #ffffff; }
   footer .word {
+    text-decoration: none;
     width: 43%;
     line-height: 56px;
     text-align: center;
