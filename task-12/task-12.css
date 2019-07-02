@@ -28,7 +28,7 @@ main .theme {
   align-items: center;
   height: 210px;
   margin-top: 50px;
-  background: url("IMG/c.png");
+  background: url("img/c.png");
   background-size: 100% 100%; }
   main .theme .theme-picture {
     height: 99px;
