@@ -24,7 +24,6 @@ header {
   .topmost{
     @include limits;
     background-color: $background-color;
-    z-index: 1;
     .vote{
       @include flex;
       height: 50px;
@@ -34,7 +33,6 @@ header {
       img {
         width: 26px;
         height: 26px;
-
       }
     }
     p{
@@ -97,6 +95,7 @@ main {
     @include limits;
     background-color: $background-color;
     padding-top: 20px;
+    z-index: 1;
   }
   .row {
     display: flex;
@@ -140,11 +139,11 @@ main {
   .epiboly:hover img {
       opacity: 1;
   }
-}
-.nothing{
-  margin-top: -10px;
-  height: 40rem;
-  background-color: $background-color;
+  .nothing{
+    margin-top: -10px;
+    height: 40rem;
+    background-color: $background-color;
+  }
 }
 footer {
   position: fixed;

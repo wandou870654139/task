@@ -14,8 +14,7 @@ header {
   header .topmost {
     max-width: 780px;
     min-width: 320px;
-    background-color: #29bde0;
-    z-index: 1; }
+    background-color: #29bde0; }
     header .topmost .vote {
       display: flex;
       justify-content: space-between;
@@ -77,7 +76,8 @@ main .top {
   max-width: 780px;
   min-width: 320px;
   background-color: #29bde0;
-  padding-top: 20px; }
+  padding-top: 20px;
+  z-index: 1; }
 main .row {
   display: flex;
   justify-content: space-around; }
@@ -112,8 +112,7 @@ main img {
   opacity: 0.0; }
 main .epiboly:hover img {
   opacity: 1; }
-
-.nothing {
+main .nothing {
   margin-top: -10px;
   height: 40rem;
   background-color: #29bde0; }

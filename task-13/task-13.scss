@@ -5,11 +5,11 @@
 }
 html {
   overflow: hidden;
-  background-color: #eff0f4;
+  background-color: #f0f0f0;
 }
 body{
   margin: 0 auto;
-  max-width: 780px;
+  max-width: 640px;
   min-width: 320px;
   position: relative;
   overflow: hidden;
@@ -44,11 +44,12 @@ aside {
   }
 }
 #wrap {
+  height: 88px;
   transition: 0.2s ease-out;
-  background-color: #69d1e9;
+  background-color: #29BDE0;
 }
 label {
-  display: block;
+  margin-top: 18px;
   display: inline-block;
   width: 1.5em;
   height: 1.5em;
@@ -57,7 +58,6 @@ label {
   border-radius: 70px;
   color: #ffffff;
   cursor: pointer;
-  font-family: Courier New;
   text-align: center;
   #sideul li {
     width: 100%;
@@ -75,26 +75,30 @@ label {
   background-color: #29bde0;
 }
 .coat {
-  width: 80%;
+  width: 568px;
   margin: auto;
   border: 1px solid #e1e5e7;
+  background-color: #ffffff;
 }
 header #wrap {
-  padding: 10px;
   transition: 0.2s ease-out;
 }
 main {
   text-align: center;
   .last-time {
-    @include flex;
+    display: flex;
+    align-items: center;
     justify-content: space-around;
-    height: 66px;
-    width: 80%;
+    height: 116px;
+    width: 568px;
     margin: auto;
-    margin-top: 18px;
-    margin-bottom: 18px;
-    font-size: 16px;
+    margin-top: 27px;
+    margin-bottom: 27px;
+    font-size: 35px;
+    color: #9A9A9A;
+    background-color: #ffffff;
     border: 1px solid #e1e5e7;
+
     img {
       height: 30px;
       width: 18px;
@@ -102,27 +106,31 @@ main {
   }
   span {
     display: block;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 14px;
+    margin-top: 27px;
+    margin-bottom: 27px;
     color: #787878;
+    font-size: 25px;
   }
   .ghost {
-    height: 60px;
-    line-height: 42px;
+    margin-top: 0;
     margin-bottom: 20px;
-    font-size: 20px;
+    height: 70px;
+    line-height: 50px;
+    font-size: 38px;
     text-align: center;
     color: #fbb435;
+    padding-top: 20px;
+    background-color: #ffffff;
     border-bottom: 1px solid #fbb435;
+
   }
   .brief {
     @include flex;
     justify-content: center;
-    height: 80px;
-    width: 80%;
+    height: 134px;
+    width: 463px;
     margin: auto;
-    font-size: 20px;
+    font-size: 32px;
     color: #ffffff;
     background-color: #69d1e9;
   }
@@ -135,9 +143,10 @@ main {
     .brie {
       @include flex;
       justify-content: center;
-      height: 80px;
-      width: 80%;
-      font-size: 20px;
+      height: 134px;
+      width: 82%;
+      margin: 0;
+      font-size: 32px;
       color: #ffffff;
       background-color: #69d1e9;
     }
