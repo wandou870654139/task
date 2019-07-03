@@ -1,15 +1,14 @@
 html {
-  overflow: hidden;
   background-color: #eff0f4; }
 
 body {
   max-width: 780px;
   min-width: 320px;
-  margin: auto;
-  overflow: hidden; }
-  body p {
-    margin: 0;
-    padding-bottom: 5px; }
+  margin: auto; }
+
+p {
+  margin: 0;
+  padding-bottom: 5px; }
 
 header .top {
   display: flex;
@@ -35,19 +34,19 @@ header .chest {
     header .chest .undercover img {
       height: 150px;
       width: 260px; }
-header .text {
-  width: 75%;
-  margin: auto;
-  color: #ffc865;
-  font-size: 20px; }
-  header .text .theme {
-    padding-bottom: 30px; }
-  header .text .when {
-    font-size: 16px;
-    color: #ffffff; }
-header .characters {
-  color: #ffffff;
-  font-size: 16px; }
+  header .chest .text {
+    width: 75%;
+    margin: auto;
+    color: #ffc865;
+    font-size: 20px; }
+    header .chest .text .theme {
+      padding-bottom: 30px; }
+    header .chest .text .when {
+      font-size: 16px;
+      color: #ffffff; }
+  header .chest .characters {
+    color: #ffffff;
+    font-size: 16px; }
 
 main .outsourcing {
   margin: auto;

@@ -3,18 +3,16 @@
   align-items: center;
 }
 html {
-  overflow: hidden;
   background-color: #eff0f4;
 }
-body{
+body {
   max-width: 780px;
   min-width: 320px;
   margin: auto;
-  overflow: hidden;
+}
   p{
   margin: 0;
     padding-bottom: 5px;
-}
 }
 header {
   .top {
@@ -42,27 +40,25 @@ header {
       img {
         height: 150px;
         width: 260px;
-
       }
     }
-  }
-  .text {
-    width: 75%;
-    margin: auto;
-    color: #ffc865;
-    font-size: 20px;
-    .theme{
-      padding-bottom: 30px;
+    .text {
+      width: 75%;
+      margin: auto;
+      color: #ffc865;
+      font-size: 20px;
+      .theme{
+        padding-bottom: 30px;
+      }
+      .when {
+        font-size: 16px;
+        color: #ffffff;
+      }
     }
-    .when {
-      font-size: 16px;
+    .characters {
       color: #ffffff;
+      font-size: 16px;
     }
-  }
-  .characters {
-    color: #ffffff;
-    font-size: 16px;
-
   }
 }
 main {
@@ -118,7 +114,6 @@ footer {
     display: flex;
     justify-content: center;
   }
-
   .uploading {
     display: flex;
     justify-content: center;
