@@ -1,5 +1,5 @@
 body {
-  max-width: 780px;
+  max-width: 720px;
   min-width: 320px;
   margin: auto; }
 
@@ -9,90 +9,133 @@ header {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: 780px;
+  max-width: 720px;
   min-width: 320px;
   line-height: 56px;
   top: 0;
-  height: 50px;
+  height: 88px;
+  font-size: 35px;
   color: #ffffff;
   background-color: #5fc0cd; }
   header .homepage {
-    margin-right: 5px; }
+    letter-spacing: 1px;
+    margin-right: 35px; }
   header img {
-    height: 24px;
-    width: 16px;
-    margin-left: 6px; }
+    height: 35px;
+    width: 21px;
+    margin-left: 35px; }
 
-main .theme {
-  display: flex;
-  align-items: center;
-  height: 210px;
-  margin-top: 50px;
-  background: url("img/c.png");
-  background-size: 100% 100%; }
-  main .theme .theme-picture {
-    height: 99px;
-    width: 99px;
-    margin: 0 1.5rem; }
-main .size {
-  font-size: 16px;
-  color: #ffffff; }
-  main .size .coordinate {
-    height: 14px;
-    width: 10px; }
-main .name {
-  color: #ffffff; }
-  main .name .age {
-    font-size: 14px;
+main {
+  margin-top: 88px;
+  margin-bottom: 88px; }
+  main .theme {
+    display: flex;
+    align-items: center;
+    height: 326px;
+    background: url("img/c.png");
+    background-size: 100% 100%; }
+    main .theme .theme-picture {
+      height: 169px;
+      width: 169px;
+      margin-left: 30px;
+      margin-right: 40px; }
+  main .size {
+    padding-top: 10px;
+    font-size: 24px;
+    letter-spacing: 2px;
     color: #ffffff; }
-main .skill {
-  height: 56px;
-  line-height: 56px;
-  border-bottom: 1px solid #e1e5e7; }
-  main .skill img {
-    height: 16px;
-    margin-left: 10px;
-    margin-right: 9px; }
-main .star {
-  height: 56px;
-  line-height: 56px;
-  margin-left: 20px; }
-  main .star .star-symbol {
-    height: 14px;
-    width: 14px;
-    margin-top: 4px; }
-    main .star .star-symbol .star-reside {
-      padding-right: 10px;
-      border-right: 1px solid #e1e5e7; }
-main .star-second {
-  height: 14px;
-  width: 14px;
-  margin-left: 4px;
-  margin-top: 4px; }
-main .year {
-  height: 56px;
-  line-height: 56px;
-  border-top: 1px solid #e1e5e7; }
-  main .year .work {
-    padding-right: 20px;
-    margin-right: 4px;
-    margin-left: 20px;
-    color: #e1e5e7;
-    border-right: 1px solid #e1e5e7; }
-  main .year .hour {
-    color: red; }
-main .introduce {
-  display: flex;
-  align-items: center;
-  border-top: 1px solid #e1e5e7;
-  border-bottom: 1px solid #e1e5e7; }
-  main .introduce .introduce-self {
-    padding-right: 20px;
-    margin-right: 4px;
-    margin-left: 20px;
-    color: #e1e5e7;
-    border-right: 1px solid #e1e5e7;
-    min-width: 65px; }
+    main .size .coordinate {
+      height: 23px;
+      width: 18px;
+      margin-right: 12px; }
+  main .name {
+    display: flex;
+    height: 34px;
+    font-size: 36px;
+    letter-spacing: 2px;
+    font-weight: 300;
+    color: white;
+    line-height: 11px; }
+    main .name .monicker {
+      margin-right: 30px; }
+    main .name .age {
+      font-size: 28px;
+      color: #ffffff; }
+  main .skill {
+    display: flex;
+    align-items: center;
+    height: 88px;
+    font-size: 32px;
+    border-bottom: 1px solid #e1e5e7; }
+    main .skill .vertical {
+      width: 3px;
+      height: 26px;
+      margin-left: 30px;
+      margin-right: 30px;
+      background: #5fc0cd;
+      border-radius: 2px; }
+  main .star {
+    display: flex;
+    align-items: center;
+    height: 88px;
+    line-height: 88px;
+    margin-left: 64px;
+    font-size: 32px; }
+    main .star .star-symbol {
+      height: 23px;
+      width: 24px;
+      margin-right: 10px; }
+      main .star .star-symbol .star-reside {
+        padding-right: 10px;
+        border-right: 1px solid #999999; }
+    main .star .wire {
+      width: 1px;
+      height: 26px;
+      margin-right: 17px;
+      margin-left: 17px;
+      background: #e1e5e7; }
+  main .wire {
+    width: 1px;
+    height: 26px;
+    margin-right: 26px;
+    margin-left: 26px;
+    background: #e1e5e7; }
+  main .star-second {
+    height: 23px;
+    width: 24px;
+    margin-right: 10px; }
+  main .year {
+    display: flex;
+    align-items: center;
+    height: 92px;
+    line-height: 92px;
+    margin-left: 64px;
+    font-size: 32px;
+    border-top: 1px solid #e1e5e7; }
+    main .year .work {
+      color: #999999;
+      font-size: 32px; }
+    main .year .hour {
+      color: red; }
+  main .introduce {
+    display: flex;
+    align-items: center;
+    height: 92px;
+    border-top: 1px solid #e1e5e7;
+    border-bottom: 1px solid #e1e5e7; }
+    main .introduce .wire {
+      width: 2px;
+      height: 26px;
+      margin-right: 26px;
+      margin-left: 26px;
+      background: #e1e5e7; }
+    main .introduce .introduce-self {
+      min-width: 128px;
+      margin-left: 64px;
+      color: #999999;
+      font-size: 32px; }
+    main .introduce .brief {
+      font-size: 31px; }
 
 footer {
   position: fixed;
@@ -100,14 +143,13 @@ footer {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: 780px;
+  max-width: 720px;
   min-width: 320px;
   line-height: 56px;
   bottom: 0;
   padding-bottom: 10px;
   background-color: #ffffff; }
   footer .word {
-    text-decoration: none;
     width: 43%;
     line-height: 56px;
     text-align: center;
@@ -116,7 +158,8 @@ footer {
     line-height: 56px;
     color: #5fc0cd;
     background-color: #ffffff;
-    border: solid; }
+    border: solid;
+    text-decoration: none; }
   footer .phone {
     width: 43%;
     line-height: 56px;

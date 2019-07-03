@@ -10,17 +10,13 @@
   border-bottom: 1px solid #e1e5e7;
   border-right: 1px solid #e1e5e7;
 }
-@mixin roof{
-  height: 50px;
-  width: 90px;
-  font-size: 22px;
-  line-height: 50px;
-  text-align: center;
-}
 $color: #ffffff;
 body{
   @include restrict;
   margin: auto;
+}
+a:hover {
+  text-decoration: none;
 }
 header {
   .thetop {
@@ -32,51 +28,59 @@ header {
     .maximum {
       @include flex;
       justify-content: space-between;
-      height: 70px;
+      height: 88px;
       background-color: #5fc0cd;
+
       .zenith {
         display: flex;
         background-color: #55a8b3;
         border-radius: 6px;
+        .employer {
+          height: 70px;
+          width: 147px;
+          font-size: 34px;
+          line-height: 70px;
+          text-align: center;
+          border-radius: 6px;
+          color: #ffffff;
+          background: #55a8b3;
+        }
+      }
+      .empty {
+        width: 68px;
+      }
+      .nursing {
+        height: 70px;
+        width: 147px;
+        font-size: 34px;
+        line-height: 70px;
+        text-align: center;
+        color: #5fc0cd;
+        background: #ffffff;
+        border-radius: 6px;
       }
     }
+    img {
+      height: 44px;
+      width: 44px;
+      margin-right: 24px;
+    }
   }
-  .empty {
-    width: 48px;
-  }
-  img {
-    height: 26px;
-    width: 24px;
-    margin-right: 24px;
-  }
-  .employer {
-    @include roof;
-    border-radius: 6px;
-    color: $color;
-    background: #55a8b3;
-  }
-  .nursing {
-    @include roof;
-    color: #5fc0cd;
-    background: $color;
-    border-radius: 6px;
-  }
-}
-.skip {
-  display: flex;
-  justify-content: center;
-  height: 66px;
-  width: 100%;
-     .place {
+  .skip {
+    display: flex;
+    justify-content: center;
+    height: 66px;
+    width: 100%;
+    .place {
       display: flex;
       justify-content: center;
       margin: 0;
       padding: 0;
-      height: 66px;
+      height: 80px;
       font-size: 18px;
       .pull-down {
         width: 100%;
-        font-size: 17px;
+        font-size: 28px;
         text-align-last: center;
         color: #999999;
         @include wire;
@@ -84,92 +88,115 @@ header {
       }
     }
   }
+  select{
+    width: auto;
+    padding-left: 16px;
+  }
+}
 main {
   .loin {
-    margin-top: 136px;
+    margin-top: 170px;
     font-size: 16px;
-    .first {
-      line-height: 38px;
-    }
-  }
-  .service {
-    @include flex;
-    font-size: 18px;
-  }
-  .date {
-    height: 24px;
-    width: 24px;
-    margin-right: 10px;
-  }
-  .coordinate {
-    width: 19px;
-    height: 24px;
-  }
-  img {
-    height: 34px;
-    width: 20px;
-  }
-  .serve {
-    margin-left: 4px;
-    color: #999999;
   }
   .coat {
-    line-height: 38px;
-    padding-right: 0px;
-  }
-  .thirdly {
-    margin-left: 36px;
-    font-size: 18px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  .coordinates {
-    @include flex;
-    font-size: 18px;
-    border-bottom: 1px solid #e1e5e7;
-  }
-  .peking {
-    margin-left: 16px;
-    color: #999999;
+    height: 180px;
+    line-height: 60px;
+    padding: 0;
+    .service {
+      @include flex;
+      margin-top: 12px;
+      font-size: 18px;
+      .date {
+        height: 24px;
+        width: 24px;
+        margin-left: 30px;
+        margin-right: 16px;
+      }
+      .serve {
+        color: #999999;
+        font-size: 26px;
+      }
+    }
+    .thirdly {
+      margin-left: 70px;
+      font-size: 28px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .coordinates {
+      @include flex;
+      font-size: 18px;
+      border-bottom: 1px solid #e1e5e7;
+      .coordinate {
+        width: 19px;
+        height: 24px;
+        margin-left: 30px;
+      }
+      .peking {
+        height: 59px;
+        font-size: 26px;
+        margin-left: 20px;
+        margin-bottom: 12px;
+        color: #999999;
+      }
+    }
   }
   .time {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    padding-right: 32px;
+    padding-left: 0px;
+    font-size: 30px;
     color: red;
     border-bottom: 1px solid #e1e5e7;
+    .hr{
+    margin-top: 4.9rem;
+    margin-bottom: 5rem;
+  }
+    img{
+      margin-left: 21px;
+    }
   }
   margin-bottom: 100px;
 }
 footer{
-    @include flex;
-    justify-content: space-around;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    @include restrict;
-    height: 100px;
-    background-color: #f8fafb;
-    .home {
-      text-align: center;
-      color: #5fc0cd;
-      img{
-        height: 30px;
-        width: 36px;
-      }
-    }
-    img{
-      height: 66px;
-      width: 66px;
-    }
-    .night {
-      text-align: center;
-      color: #999999;
-      img{
-        height: 30px;
-        width: 36px;
-      }
+  @include flex;
+  justify-content: space-evenly;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  @include restrict;
+  height: 100px;
+  background-color: #f8fafb;
+  .home {
+    font-size: 20px;
+    text-align: center;
+    color: #5fc0cd;
+
+    img {
+      height: 42px;
+      width: 42px;
+      margin-bottom: 8px;
+
     }
   }
+  img {
+    height: 94px;
+    width: 94px;
+  }
+
+  .night {
+    font-size: 20px;
+    text-align: center;
+    color: #999999;
+
+    img {
+      height: 42px;
+      width: 42px;
+      margin-bottom: 8px;
+    }
+  }
+}
 
