@@ -27,7 +27,9 @@ header {
 
 main {
   margin-top: 88px;
-  margin-bottom: 88px; }
+  margin-bottom: 120px; }
+  main .row {
+    border-bottom: 1px solid #e1e5e7; }
   main .theme {
     display: flex;
     align-items: center;
@@ -39,28 +41,28 @@ main {
       width: 169px;
       margin-left: 30px;
       margin-right: 40px; }
-  main .size {
-    padding-top: 10px;
-    font-size: 24px;
-    letter-spacing: 2px;
-    color: #ffffff; }
-    main .size .coordinate {
-      height: 23px;
-      width: 18px;
-      margin-right: 12px; }
-  main .name {
-    display: flex;
-    height: 34px;
-    font-size: 36px;
-    letter-spacing: 2px;
-    font-weight: 300;
-    color: white;
-    line-height: 11px; }
-    main .name .monicker {
-      margin-right: 30px; }
-    main .name .age {
-      font-size: 28px;
+    main .theme .name {
+      display: flex;
+      height: 34px;
+      font-size: 36px;
+      letter-spacing: 2px;
+      font-weight: 300;
+      color: white;
+      line-height: 11px; }
+      main .theme .name .monicker {
+        margin-right: 30px; }
+      main .theme .name .age {
+        font-size: 28px;
+        color: #ffffff; }
+    main .theme .size {
+      padding-top: 10px;
+      font-size: 24px;
+      letter-spacing: 2px;
       color: #ffffff; }
+      main .theme .size .coordinate {
+        height: 23px;
+        width: 18px;
+        margin-right: 12px; }
   main .skill {
     display: flex;
     align-items: center;
@@ -77,33 +79,34 @@ main {
   main .star {
     display: flex;
     align-items: center;
-    height: 88px;
-    line-height: 88px;
-    margin-left: 64px;
+    height: 92px;
+    line-height: 92px;
+    margin-left: 32px;
+    padding-left: 32px;
     font-size: 32px; }
     main .star .star-symbol {
       height: 23px;
       width: 24px;
       margin-right: 10px; }
-      main .star .star-symbol .star-reside {
-        padding-right: 10px;
-        border-right: 1px solid #999999; }
+    main .star .star-reside {
+      padding-right: 10px;
+      border-right: 1px solid #999999; }
     main .star .wire {
       width: 1px;
       height: 26px;
       margin-right: 17px;
       margin-left: 17px;
       background: #e1e5e7; }
-  main .wire {
-    width: 1px;
-    height: 26px;
-    margin-right: 26px;
-    margin-left: 26px;
-    background: #e1e5e7; }
-  main .star-second {
-    height: 23px;
-    width: 24px;
-    margin-right: 10px; }
+    main .star .wire {
+      width: 1px;
+      height: 26px;
+      margin-right: 26px;
+      margin-left: 26px;
+      background: #e1e5e7; }
+    main .star .star-second {
+      height: 23px;
+      width: 24px;
+      margin-right: 10px; }
   main .year {
     display: flex;
     align-items: center;
@@ -115,20 +118,31 @@ main {
     main .year .work {
       color: #999999;
       font-size: 32px; }
-    main .year .hour {
+  main .wire {
+    width: 2px;
+    height: 26px;
+    margin-right: 26px;
+    margin-left: 26px;
+    background: #e1e5e7; }
+  main .price {
+    display: flex;
+    align-items: center;
+    height: 92px;
+    line-height: 92px;
+    margin-left: 64px;
+    font-size: 32px;
+    border-top: 1px solid #e1e5e7;
+    border-bottom: 1px solid #e1e5e7; }
+    main .price .work {
+      color: #999999;
+      font-size: 32px; }
+    main .price .hour {
       color: red; }
   main .introduce {
     display: flex;
     align-items: center;
     height: 92px;
-    border-top: 1px solid #e1e5e7;
     border-bottom: 1px solid #e1e5e7; }
-    main .introduce .wire {
-      width: 2px;
-      height: 26px;
-      margin-right: 26px;
-      margin-left: 26px;
-      background: #e1e5e7; }
     main .introduce .introduce-self {
       min-width: 128px;
       margin-left: 64px;
@@ -148,24 +162,27 @@ footer {
   line-height: 56px;
   bottom: 0;
   padding-bottom: 10px;
+  font-size: 34px;
   background-color: #ffffff; }
   footer .word {
     width: 43%;
-    line-height: 56px;
+    height: 88px;
+    margin-left: 37px;
+    line-height: 88px;
     text-align: center;
-    border-radius: 8px;
-    height: 56px;
-    line-height: 56px;
     color: #5fc0cd;
     background-color: #ffffff;
+    border-radius: 8px;
     border: solid;
     text-decoration: none; }
   footer .phone {
     width: 43%;
-    line-height: 56px;
+    height: 94px;
+    line-height: 94px;
+    margin-right: 37px;
     text-align: center;
-    border-radius: 8px;
     color: #ffff;
-    background-color: #5fc0cd; }
+    background-color: #5fc0cd;
+    border-radius: 8px; }
 
 /*# sourceMappingURL=task-12.css.map */
