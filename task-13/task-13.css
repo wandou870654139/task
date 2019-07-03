@@ -1,71 +1,13 @@
 html {
-  overflow: hidden;
-  background-color: #f0f0f0; }
+  margin: auto;
+  max-width: 640px;
+  min-width: 320px; }
 
 body {
   margin: 0 auto;
   max-width: 640px;
   min-width: 320px;
-  position: relative;
-  overflow: hidden; }
-
-#sidemenu {
-  display: none; }
-
-#sidemenu:checked + aside {
-  left: 0; }
-
-#sidemenu:checked ~ .asd {
-  padding-left: 50%;
-  margin-right: -50%; }
-
-aside {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: -50%;
-  width: 50%;
-  background: #ffffff;
-  transition: 0.2s ease-out; }
-  aside a {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 30px;
-    list-style: none;
-    text-decoration: none;
-    color: #29bde0;
-    border-bottom: 1px solid #9c9c9c; }
-
-#wrap {
-  height: 88px;
-  transition: 0.2s ease-out;
-  background-color: #29BDE0; }
-
-label {
-  margin-top: 18px;
-  display: inline-block;
-  width: 1.5em;
-  height: 1.5em;
-  line-height: 1.5em;
-  font-size: 2em;
-  border-radius: 70px;
-  color: #ffffff;
-  cursor: pointer;
-  text-align: center; }
-  label #sideul li {
-    width: 100%;
-    font-size: 1rem;
-    list-style: none;
-    color: #69d1e9; }
-
-#sideul li:hover {
-  color: orange; }
-
-.menus {
-  height: 50px;
-  line-height: 50px;
-  background-color: #29bde0; }
+  background-color: #f0f0f0; }
 
 .coat {
   width: 568px;
@@ -73,15 +15,23 @@ label {
   border: 1px solid #e1e5e7;
   background-color: #ffffff; }
 
-header #wrap {
-  transition: 0.2s ease-out; }
+header {
+  padding-left: 24px;
+  padding-top: 40px;
+  height: 48px;
+  background-color: #29BDE0; }
+  header .menu {
+    width: 34px;
+    height: 4px;
+    margin-bottom: 7px;
+    background: #ffffff; }
 
 main {
   text-align: center; }
   main .last-time {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 116px;
     width: 568px;
     margin: auto;
@@ -91,9 +41,12 @@ main {
     color: #9A9A9A;
     background-color: #ffffff;
     border: 1px solid #e1e5e7; }
+    main .last-time .dexter {
+      margin-left: 12px; }
     main .last-time img {
       height: 30px;
-      width: 18px; }
+      width: 18px;
+      margin-right: 12px; }
   main span {
     display: block;
     margin-top: 27px;
@@ -102,7 +55,7 @@ main {
     font-size: 25px; }
   main .ghost {
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 31px;
     height: 70px;
     line-height: 50px;
     font-size: 38px;
@@ -140,17 +93,23 @@ main {
     main .suspect img {
       width: 16px;
       height: 40px; }
+  main .user {
+    display: block;
+    margin-top: 26px;
+    margin-bottom: 8px;
+    color: #787878;
+    font-size: 25px; }
   main .circle {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 14px;
-    padding-bottom: 10px; }
+    padding-bottom: 8px; }
     main .circle .dot {
-      height: 10px;
-      width: 10px;
-      margin-left: 3px;
-      background-color: #9c9c9c;
+      height: 17px;
+      width: 17px;
+      margin-left: 9px;
+      background-color: #C9C9C9;
       border-radius: 50%; }
     main .circle .dot:hover {
       background-color: #69d1e9; }

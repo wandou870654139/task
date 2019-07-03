@@ -1,16 +1,17 @@
 html {
-  overflow: hidden;
   background-color: #eff0f4; }
 
 body {
   margin: auto;
   max-width: 780px;
-  min-width: 320px; }
+  min-width: 320px;
+  background-color: #ffffff; }
 
 header {
   position: fixed;
   top: 0;
-  width: 100%; }
+  width: 100%;
+  z-index: 1; }
   header .topmost {
     max-width: 780px;
     min-width: 320px;
@@ -75,6 +76,7 @@ main .middle {
 main .top {
   max-width: 780px;
   min-width: 320px;
+  height: 665px;
   background-color: #29bde0;
   padding-top: 20px;
   z-index: 1; }
@@ -112,10 +114,6 @@ main img {
   opacity: 0.0; }
 main .epiboly:hover img {
   opacity: 1; }
-main .nothing {
-  margin-top: -10px;
-  height: 40rem;
-  background-color: #29bde0; }
 
 footer {
   position: fixed;
