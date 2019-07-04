@@ -14,6 +14,8 @@ header .top {
   justify-content: space-between;
   height: 86px;
   width: 640px;
+  max-width: 640px;
+  min-width: 320px;
   font-size: 34px;
   color: aliceblue;
   border-bottom: 1px solid #f0f0f0;
