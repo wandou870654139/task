@@ -2,7 +2,7 @@ html {
   background-color: #eff0f4; }
 
 body {
-  max-width: 780px;
+  max-width: 640px;
   min-width: 320px;
   margin: auto; }
 
@@ -27,6 +27,7 @@ header .top {
     margin-right: 18px; }
 header .chest {
   width: 640px;
+  height: 646px;
   background-color: #29bde0; }
   header .chest .undercover {
     display: flex;
@@ -51,7 +52,7 @@ header .chest {
 
 main {
   width: 640px;
-  margin-bottom: 46px; }
+  margin-bottom: 129px; }
   main .outsourcing {
     margin: auto;
     padding: 10px 12.5% 20px 12.5%;
@@ -63,7 +64,7 @@ main {
       font-size: 20px;
       color: #C7C7C7; }
       main .outsourcing .first .number {
-        font-size: 26px;
+        font-size: 30px;
         margin-bottom: 22px;
         color: #111111; }
       main .outsourcing .first p {

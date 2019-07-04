@@ -6,7 +6,7 @@ html {
   background-color: #eff0f4;
 }
 body {
-  max-width: 780px;
+  max-width: 640px;
   min-width: 320px;
   margin: auto;
 }
@@ -20,7 +20,6 @@ header {
     justify-content: space-between;
     height: 86px;
     width: 640px;
-
     font-size: 34px;
     color: aliceblue;
     border-bottom: 1px solid #f0f0f0;
@@ -34,6 +33,7 @@ header {
   }
   .chest {
     width: 640px;
+    height: 646px;
     background-color: #29bde0;
     .undercover {
       display: flex;
@@ -75,7 +75,7 @@ main {
       font-size: 20px;
       color: #C7C7C7;
       .number {
-        font-size: 26px;
+        font-size: 30px;
         margin-bottom: 22px;
         color: #111111;
       }
@@ -94,7 +94,7 @@ main {
     }
   }
   width: 640px;
-  margin-bottom: 46px;
+  margin-bottom: 129px;
 }
 footer {
   @include flex;
