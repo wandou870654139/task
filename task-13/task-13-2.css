@@ -56,7 +56,9 @@ header {
             width: 52px; }
         header .topmost .discussion .frequency .start {
           opacity: 0.0;
-          transform: rotate(90deg); }
+          transform: rotate(360deg);
+          margin-left: -50px;
+          margin-top: 50px; }
     header .topmost .triangle {
       width: 0;
       height: 0;
