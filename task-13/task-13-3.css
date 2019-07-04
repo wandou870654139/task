@@ -48,23 +48,25 @@ header .chest {
     color: #ffffff;
     font-size: 16px; }
 
-main .outsourcing {
-  margin: auto;
-  padding: 10px 12.5% 12px 12.5%;
-  border-bottom: 1px solid #bcbcbc; }
-  main .outsourcing .first {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    font-size: 16px;
-    color: #e0e0e0; }
-    main .outsourcing .first p {
-      color: #111111; }
-    main .outsourcing .first .hour {
+main {
+  margin-bottom: 46px; }
+  main .outsourcing {
+    margin: auto;
+    padding: 10px 12.5% 12px 12.5%;
+    border-bottom: 1px solid #bcbcbc; }
+    main .outsourcing .first {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      font-size: 16px;
       color: #e0e0e0; }
-  main .outsourcing .night {
-    font-size: 16px;
-    color: #bcbcbc; }
+      main .outsourcing .first p {
+        color: #111111; }
+      main .outsourcing .first .hour {
+        color: #e0e0e0; }
+    main .outsourcing .night {
+      font-size: 16px;
+      color: #bcbcbc; }
 
 footer {
   display: flex;

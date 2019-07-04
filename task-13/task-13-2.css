@@ -3,59 +3,61 @@ html {
 
 body {
   margin: auto;
-  max-width: 780px;
+  max-width: 640px;
   min-width: 320px;
   background-color: #ffffff; }
 
 header {
   position: fixed;
+  max-width: 640px;
+  min-width: 320px;
   top: 0;
   width: 100%;
   z-index: 1; }
   header .topmost {
-    max-width: 780px;
-    min-width: 320px;
     background-color: #29bde0; }
     header .topmost .vote {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      height: 50px;
+      height: 88px;
       margin-right: 24px;
       margin-left: 24px;
       color: #ffffff; }
       header .topmost .vote img {
-        width: 26px;
-        height: 26px; }
+        width: 40px;
+        height: 40px; }
     header .topmost p {
       display: flex;
       justify-content: center;
-      font-size: 26px; }
+      font-size: 34px; }
     header .topmost .discussion {
       display: flex;
       justify-content: space-between;
       align-items: center;
       background-color: rgba(255, 255, 255, 0.6);
-      height: 58px;
-      font-size: 14px;
+      height: 82px;
+      font-size: 26px;
       color: #999999;
       white-space: nowrap;
-      overflow: hidden;
       text-overflow: ellipsis; }
       header .topmost .discussion p {
-        font-size: 16px;
-        margin-left: 40px; }
+        font-size: 24px;
+        margin-left: 46px;
+        color: #464646;
+        letter-spacing: 2px; }
       header .topmost .discussion .frequency {
         display: flex;
         width: 100px;
         margin-bottom: 6px;
-        margin-top: -44px; }
+        margin-top: -44px;
+        margin-right: 17px; }
         header .topmost .discussion .frequency .yellow {
           margin-left: 46px;
           margin-top: 52px; }
           header .topmost .discussion .frequency .yellow .transmit {
-            height: 38px;
-            width: 38px; }
+            height: 52px;
+            width: 52px; }
         header .topmost .discussion .frequency .start {
           opacity: 0.0;
           transform: rotate(90deg); }
@@ -63,20 +65,21 @@ header {
       width: 0;
       height: 0;
       margin-left: 64px;
-      border-left: 6px solid transparent;
-      border-right: 6px solid transparent;
-      border-top: 6px solid rgba(255, 255, 255, 0.6); }
+      border-left: 8px solid transparent;
+      border-right: 7px solid transparent;
+      border-top: 13px solid rgba(255, 255, 255, 0.6); }
     header .topmost .click {
-      margin: 6px 0px 12px 70px;
-      font-size: 12px;
+      padding-bottom: 25px;
+      margin: 6px 0px 0px 72px;
+      font-size: 24px;
       color: #ffffff; }
 
 main .middle {
-  height: 120px; }
+  height: 218px; }
 main .top {
-  max-width: 780px;
+  max-width: 640px;
   min-width: 320px;
-  height: 665px;
+  height: 100%;
   background-color: #29bde0;
   padding-top: 20px;
   z-index: 1; }
@@ -90,45 +93,47 @@ main audio {
   width: 110px;
   margin: 58px -111px 22px 0px; }
 main .civilian {
-  margin-top: 20px;
-  font-size: 18px; }
+  margin-top: 32px;
+  font-size: 30px; }
 main .text {
   position: relative;
-  height: 80px;
-  width: 80px;
+  height: 126px;
+  width: 126px;
   margin-top: 8px;
-  margin-bottom: 8px;
+  margin-bottom: 21px;
   text-align: center;
-  Border: 6px solid #ffffff;
+  Border: 5px solid #ffffff;
   background-color: #f5c97b; }
 main .first {
   position: absolute;
   bottom: 0;
   width: 100%;
   color: #ffffff;
-  font-size: 18px;
+  font-size: 23px;
   background-color: #83b09a; }
 main img {
-  height: 22px;
-  margin-left: 2px;
+  height: 30px;
+  width: 136px;
+  margin-bottom: 20px;
   opacity: 0.0; }
 main .epiboly:hover img {
   opacity: 1; }
 
 footer {
   position: fixed;
-  max-width: 780px;
+  max-width: 640px;
   min-width: 320px;
   bottom: 0;
   width: 100%;
-  height: 45px;
+  height: 87px;
+  padding-bottom: 60px;
   text-align: -webkit-center;
   background: #29bde0; }
   footer .bottom {
     text-align: center;
-    font-size: 26px;
-    width: 66%;
-    margin: 6px 0px 15px 0px;
+    font-size: 40px;
+    width: 468px;
+    margin: 42px 0px 60px 0px;
     background-color: #fbb435; }
     footer .bottom .cast {
       color: #ffffff;
