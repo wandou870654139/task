@@ -35,8 +35,8 @@ main {
     height: 116px;
     width: 568px;
     margin: auto;
-    margin-top: 27px;
-    margin-bottom: 27px;
+    margin-top: 26px;
+    margin-bottom: 26px;
     font-size: 35px;
     color: #9A9A9A;
     background-color: #ffffff;
@@ -49,8 +49,7 @@ main {
       margin-right: 12px; }
   main span {
     display: block;
-    margin-top: 27px;
-    margin-bottom: 27px;
+    margin: 27px 0px;
     color: #787878;
     font-size: 25px; }
   main .ghost {
