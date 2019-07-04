@@ -67,13 +67,12 @@ header {
       border-right: 7px solid transparent;
       border-top: 13px solid rgba(255, 255, 255, 0.6); }
     header .topmost .click {
-      padding-bottom: 24px;
-      margin: 6px 0px 0px 72px;
+      padding: 6px 0px 24px 72px;
       font-size: 24px;
       color: #ffffff; }
 
 main {
-  margin-bottom: 86px; }
+  margin-bottom: 146px; }
   main .middle {
     height: 218px; }
   main .top {
