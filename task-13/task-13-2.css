@@ -1,13 +1,12 @@
 body {
-  margin: auto;
   max-width: 640px;
-  min-width: 320px;
-  background-color: #ffffff; }
+  min-width: 640px;
+  margin: auto; }
 
 header {
   position: fixed;
   max-width: 640px;
-  min-width: 320px;
+  min-width: 640px;
   top: 0;
   width: 100%;
   z-index: 1; }
@@ -76,8 +75,6 @@ main {
   main .middle {
     height: 218px; }
   main .top {
-    max-width: 640px;
-    min-width: 320px;
     height: 100%;
     background-color: #29bde0;
     padding-top: 28px;
@@ -121,7 +118,7 @@ main {
 footer {
   position: fixed;
   max-width: 640px;
-  min-width: 320px;
+  min-width: 640px;
   bottom: 0;
   width: 100%;
   height: 86px;

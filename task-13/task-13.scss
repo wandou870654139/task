@@ -9,7 +9,7 @@ html {
   min-width: 320px;
 }
 body{
-  margin: 0 auto;
+  margin: auto;
   max-width: 640px;
   min-width: 320px;
   background-color: #f0f0f0;
@@ -21,9 +21,12 @@ body{
   background-color: #ffffff;
 }
 header {
-  padding-left: 24px;
-  padding-top: 40px;
+  width: 640px;
   height: 48px;
+  max-width: 640px;
+  min-width: 320px;
+  margin: auto;
+  padding-top: 40px;
   background-color: #29BDE0;
 
   .menu{
@@ -31,9 +34,11 @@ header {
     height: 4px;
     margin-bottom: 7px;
     background:#ffffff;
+    margin-left: 24px;
   }
 }
 main {
+  width: 640px;
   text-align: center;
   .last-time {
     display: flex;
