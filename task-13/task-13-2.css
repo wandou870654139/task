@@ -81,7 +81,7 @@ main .top {
   min-width: 320px;
   height: 100%;
   background-color: #29bde0;
-  padding-top: 20px;
+  padding-top: 28px;
   z-index: 1; }
 main .row {
   display: flex;
@@ -130,13 +130,14 @@ footer {
   text-align: -webkit-center;
   background: #29bde0; }
   footer .bottom {
-    text-align: center;
     font-size: 40px;
-    width: 468px;
-    margin: 42px 0px 60px 0px;
-    background-color: #fbb435; }
+    text-decoration: none; }
     footer .bottom .cast {
       color: #ffffff;
-      text-decoration: none; }
+      text-decoration: none;
+      width: 490px;
+      height: 87px;
+      background-color: #fbb435;
+      line-height: 87px; }
 
 /*# sourceMappingURL=task-13-2.css.map */

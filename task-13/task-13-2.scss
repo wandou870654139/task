@@ -100,7 +100,7 @@ main {
     @include limits;
     height: 100%;
     background-color: $background-color;
-    padding-top: 20px;
+    padding-top: 28px;
     z-index: 1;
   }
   .row {
@@ -157,14 +157,15 @@ footer {
     text-align: -webkit-center;
     background: #29bde0;
   .bottom {
-      text-align: center;
-      font-size: 40px;
-      width: 468px;
-      margin: 42px 0px 60px 0px;
-      background-color: #fbb435;
+    font-size: 40px;
+    text-decoration: none;
     .cast {
-        color: #ffffff;
-        text-decoration: none;
+      color: #ffffff;
+      text-decoration: none;
+      width: 490px;
+      height: 87px;
+      background-color: #fbb435;
+      line-height: 87px;
       }
     }
   }
