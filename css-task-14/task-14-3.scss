@@ -28,7 +28,8 @@ body{
 }
 .sidebar-body{
   padding: 0;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 20px;
   background-color: #ffffff;
   border: 1px solid #ededed;
   .sidebar-epiboly{
@@ -52,6 +53,10 @@ body{
   .sidebar-epiboly:hover .sidebar-circle {
     background-color: #f9a372;
   }
+  .sidebar-epiboly a:hover {
+    text-decoration: none;
+    color: #ff650e;
+  }
 }
 .potato{
   text-align: center;
@@ -68,9 +73,11 @@ body{
     margin-top: 20px;
     font-size: 13px;
     color: #b3b3b3;
+    text-align: left;
   }
 }
 .potato-epiboly{
+  margin-bottom: 16px;
   background-color: #ffffff;
   border:1px solid #ededed;
   .potato-text{

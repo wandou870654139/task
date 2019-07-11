@@ -81,7 +81,7 @@ body{
     .head-portrait {
       grid-column-start: 5;
       grid-column-end: 1;
-      margin: 15px 0px 0px 8px;
+      margin: 14px 4px 0px 8px;
       background-repeat: no-repeat;
       background: url("img/beijing,1.png");
       background-repeat: no-repeat;
@@ -254,6 +254,7 @@ body{
   }
 }
 .hovereffect {
+  display: none;
   position: absolute;
   height: 100%;
   padding: 60px 40px 0 40px;
@@ -262,7 +263,7 @@ body{
   opacity: 1;
   color: white;
   -webkit-animation: cartoon 1s;
-  display: none;
+
 }
   h4 {
     font-size: 1.3rem;

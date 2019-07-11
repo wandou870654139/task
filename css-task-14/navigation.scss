@@ -82,8 +82,11 @@
 }
 header {
   background-color: #ffffff;
+
   .epiboly {
+    position: relative;
     background-color: #29b078;
+    -webkit-animation: cartoon 1s;
     img {
       width: 138px;
       height: 66px;
@@ -102,19 +105,16 @@ header {
         padding: 0px 15px;
         text-decoration: none;
       }
-
       .nav-link {
         height: 80px;
         line-height: 80px;
         color: #ffffff;
         text-decoration: none;
       }
-
       .nav-item:hover {
         border-bottom: 4px solid #ffffff;
       }
     }
-
     #nav-menu {
       display: none;
     }

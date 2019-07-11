@@ -77,7 +77,9 @@
 header {
   background-color: #ffffff; }
   header .epiboly {
-    background-color: #29b078; }
+    position: relative;
+    background-color: #29b078;
+    -webkit-animation: cartoon 1s; }
     header .epiboly img {
       width: 138px;
       height: 66px; }

@@ -14,6 +14,7 @@ p {
   justify-content: center; }
 
 .subnav {
+  margin-bottom: 30px;
   text-align: center; }
   .subnav .rocket {
     height: 50px;
