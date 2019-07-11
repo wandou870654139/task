@@ -70,6 +70,8 @@ body{
     text-align: center;
     height: 5rem;
     line-height: 5rem;
+    padding: 0;
+    border-bottom:4px solid #29b078;
 }
 .recommend {
     color: #ffffff;

@@ -1,0 +1,90 @@
+body{
+  margin: 0;
+}
+*{
+  box-sizing: border-box;
+}
+.recommend{
+  img {
+    width: 100%;
+  }
+}
+.subnav{
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  font-size: 16px;
+  .subnav-enterprise{
+  color: #29b078;
+ }
+}
+.sidebar{
+  padding: 0.5rem;
+  font-size: 22px;
+  text-align: center;
+  border: 1px solid #ededed;
+}
+.sidebar-body{
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ededed;
+  .sidebar-epiboly{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .sidebar-circle{
+      height: 14px;
+      width: 14px;
+      margin: 9px;
+      border-radius: 50%;
+      border: 1px solid #ff650e;
+    }
+    .sidebar-text{
+      font-size: 16px;
+      color: #26a26f;
+      text-decoration: none;
+      background-color: transparent;
+    }
+  }
+  .sidebar-epiboly:hover .sidebar-circle {
+    background-color: #f9a372;
+  }
+}
+.potato{
+  text-align: center;
+   border:1px solid #ededed;
+  img{
+    height: 130px;
+    width: 150px;
+  }
+  .potato-theme{
+    padding-right: 60px;
+    padding-left: 60px;
+    margin-top: 20px;
+    font-size: 13px;
+    color: #b3b3b3;
+  }
+}
+.potato-epiboly{
+  border:1px solid #ededed;
+  .potato-text{
+    margin: 0;
+    font-size: 13px;
+    color: #b3b3b3;
+    padding: 30px 70px 20px 70px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .potato {
+    display: flex;
+    align-items: center;
+    text-align: center;;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+}
+a {
+  text-decoration: none;
+  background-color: transparent;
+}
+
