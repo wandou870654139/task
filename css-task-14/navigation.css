@@ -74,31 +74,33 @@
 
   .contact-way {
     opacity: 0; } }
-header .epiboly {
-  background-color: #29b078; }
-  header .epiboly img {
-    width: 138px;
-    height: 66px; }
-  header .epiboly .navbar {
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    list-style: none; }
-    header .epiboly .navbar .nav-item {
-      height: 80px;
-      line-height: 80px;
-      color: #ffffff;
-      padding: 0px 15px;
-      text-decoration: none; }
-    header .epiboly .navbar .nav-link {
-      height: 80px;
-      line-height: 80px;
-      color: #ffffff;
-      text-decoration: none; }
-    header .epiboly .navbar .nav-item:hover {
-      border-bottom: 4px solid #ffffff; }
-  header .epiboly #nav-menu {
-    display: none; }
+header {
+  background-color: #ffffff; }
+  header .epiboly {
+    background-color: #29b078; }
+    header .epiboly img {
+      width: 138px;
+      height: 66px; }
+    header .epiboly .navbar {
+      text-align: center;
+      padding: 0;
+      margin: 0;
+      list-style: none; }
+      header .epiboly .navbar .nav-item {
+        height: 80px;
+        line-height: 80px;
+        color: #ffffff;
+        padding: 0px 15px;
+        text-decoration: none; }
+      header .epiboly .navbar .nav-link {
+        height: 80px;
+        line-height: 80px;
+        color: #ffffff;
+        text-decoration: none; }
+      header .epiboly .navbar .nav-item:hover {
+        border-bottom: 4px solid #ffffff; }
+    header .epiboly #nav-menu {
+      display: none; }
 
 footer .tail {
   background-color: #29b078; }

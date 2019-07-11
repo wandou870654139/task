@@ -1,5 +1,6 @@
 body{
   margin: 0;
+  background-color: #fafafa;
 }
 *{
   box-sizing: border-box;
@@ -23,10 +24,12 @@ body{
   font-size: 22px;
   text-align: center;
   border: 1px solid #ededed;
+  background-color: #ffffff;
 }
 .sidebar-body{
   padding: 0;
   margin: 0;
+  background-color: #ffffff;
   border: 1px solid #ededed;
   .sidebar-epiboly{
     display: flex;
@@ -52,20 +55,23 @@ body{
 }
 .potato{
   text-align: center;
+  background-color: #ffffff;
    border:1px solid #ededed;
   img{
     height: 130px;
     width: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   .potato-theme{
-    padding-right: 60px;
-    padding-left: 60px;
+    padding-right: 80px;
     margin-top: 20px;
     font-size: 13px;
     color: #b3b3b3;
   }
 }
 .potato-epiboly{
+  background-color: #ffffff;
   border:1px solid #ededed;
   .potato-text{
     margin: 0;
@@ -82,9 +88,24 @@ body{
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
   }
+  .potato-theme{
+    padding-right: 70px;
+    margin-top: 20px;
+    font-size: 13px;
+    color: #b3b3b3;
+  }
 }
-a {
-  text-decoration: none;
-  background-color: transparent;
+@media screen and (max-width: 992px) {
+  .potato-theme {
+    padding-right: 80px;
+    padding-left: 60px;
+    margin-top: 20px;
+    font-size: 13px;
+    color: #b3b3b3;
+  }
+  a {
+    text-decoration: none;
+    background-color: transparent;
+  }
 }
 

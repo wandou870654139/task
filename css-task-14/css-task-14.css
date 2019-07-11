@@ -47,6 +47,8 @@ p {
   .guild .figure {
     height: 56px;
     width: 56px; }
+  .guild p {
+    width: 166px; }
   .guild .arrows {
     height: 30px;
     width: 32px; }
