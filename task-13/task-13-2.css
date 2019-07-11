@@ -78,6 +78,7 @@ main {
     height: 100%;
     background-color: #29bde0;
     padding-top: 28px;
+    padding-bottom: 40rem;
     z-index: 1; }
   main .row {
     display: flex;

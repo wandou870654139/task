@@ -51,7 +51,8 @@
     display: block; }
 
   .nav-head {
-    margin-top: 8px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     background-color: #29b078; }
 
   input[type=checkbox], input[type=radio] {
@@ -78,8 +79,6 @@
 header {
   background-color: #ffffff; }
   header .epiboly {
-    position: relative;
-    height: 80px;
     background-color: #29b078; }
     header .epiboly img {
       width: 138px;
@@ -106,7 +105,6 @@ header {
       display: none; }
 
 footer .tail {
-  margin-top: 14px;
   background-color: #29b078; }
   footer .tail .tail-jnshu {
     color: white;
