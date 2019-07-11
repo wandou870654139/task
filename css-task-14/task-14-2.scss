@@ -8,6 +8,7 @@ body{
   height: 80px;
   line-height: 80px;
   font-size: 16px;
+  border-bottom: 1px solid #b3b3b3;
   .enterprise {
     color: #29b078;
   }
@@ -15,9 +16,9 @@ body{
 .home {
   margin: 0;
   align-content: center;
-  border-bottom: 1px solid #b3b3b3;
   .occupation {
     line-height: 60px;
+    border-bottom: 1px solid #b3b3b3;
     .direction {
       font-size: 14px;
       color: #999999;
@@ -68,7 +69,6 @@ body{
   }
 }
 .grid {
-  padding-bottom: 10px;
   .wrapper {
     grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
     grid-template-rows: 10rem 3rem 3rem 2rem 2rem 2rem 3rem 3rem;
@@ -266,7 +266,10 @@ body{
 
 }
   h4 {
+    padding: 26px 0px;
+    margin: 0;
     font-size: 1.3rem;
+    border-bottom: 1px solid #b3b3b3;
   }
 .wrapper:hover .hovereffect{
     display: block;

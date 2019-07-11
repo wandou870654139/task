@@ -55,6 +55,7 @@
     display: block;
   }
   .nav-head {
+    margin-top: 8px;
     background-color: #29b078;
   }
   input[type=checkbox], input[type=radio] {
@@ -85,8 +86,8 @@ header {
 
   .epiboly {
     position: relative;
+    height: 80px;
     background-color: #29b078;
-    -webkit-animation: cartoon 1s;
     img {
       width: 138px;
       height: 66px;
@@ -122,6 +123,7 @@ header {
 }
 footer {
   .tail {
+    margin-top: 14px;
     background-color: #29b078;
     .tail-jnshu {
       color: white;

@@ -7,16 +7,17 @@ body {
 .subnav {
   height: 80px;
   line-height: 80px;
-  font-size: 16px; }
+  font-size: 16px;
+  border-bottom: 1px solid #b3b3b3; }
   .subnav .enterprise {
     color: #29b078; }
 
 .home {
   margin: 0;
-  align-content: center;
-  border-bottom: 1px solid #b3b3b3; }
+  align-content: center; }
   .home .occupation {
-    line-height: 60px; }
+    line-height: 60px;
+    border-bottom: 1px solid #b3b3b3; }
     .home .occupation .direction {
       font-size: 14px;
       color: #999999; }
@@ -58,162 +59,160 @@ body {
     color: #ffffff;
     background-color: #29b078; }
 
-.grid {
-  padding-bottom: 10px; }
-  .grid .wrapper {
-    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-    grid-template-rows: 10rem 3rem 3rem 2rem 2rem 2rem 3rem 3rem;
-    display: grid;
-    position: relative;
-    margin-top: 24px;
-    background: #fff;
-    cursor: pointer;
-    border: 1px solid #ddd; }
-    .grid .wrapper .head-portrait {
-      grid-column-start: 5;
-      grid-column-end: 1;
-      margin: 14px 4px 0px 8px;
-      background-repeat: no-repeat;
-      background: url("img/beijing,1.png");
-      background-repeat: no-repeat; }
-    .grid .wrapper .introduce {
-      grid-column-start: 11;
-      grid-column-end: 5; }
-      .grid .wrapper .introduce .engineer {
-        margin: 18px 0px 18px 0px;
-        font-size: 14px; }
-      .grid .wrapper .introduce .text {
-        font-size: 14px;
-        word-break: break-all;
-        width: 200px; }
-    .grid .wrapper .threshold {
-      grid-column-start: 6;
-      grid-column-end: 1;
-      padding: 0.8rem 0rem 0rem 0.5rem;
-      font-size: 12px;
-      border: 1px solid whitesmoke;
-      color: #b3b3b3; }
-      .grid .wrapper .threshold img {
-        height: 15px;
-        width: 16px;
-        margin-left: 8px; }
-    .grid .wrapper .complexity {
-      grid-column-start: 6;
-      grid-column-end: 11;
-      grid-row-start: 2;
-      grid-row-end: 3;
-      padding-top: 15px;
-      font-size: 12px;
-      border-bottom: 1px solid whitesmoke;
-      border-top: 1px solid whitesmoke;
-      color: #b3b3b3; }
-      .grid .wrapper .complexity .degree {
-        padding-left: 8px; }
-      .grid .wrapper .complexity img {
-        height: 15px;
-        width: 16px;
-        margin-left: 5px; }
-    .grid .wrapper .growth-cycle {
-      grid-column-start: 1;
-      grid-column-end: 6;
-      grid-row-start: 3;
-      grid-row-end: 4;
-      padding: 14px 0px 0px 4px;
-      font-size: 12px;
-      border-bottom: 1px solid whitesmoke;
-      border-right: 1px solid whitesmoke;
-      color: #b3b3b3; }
-      .grid .wrapper .growth-cycle .red {
-        padding-left: 6px;
-        color: red; }
-    .grid .wrapper .scarcity {
-      grid-column-start: 6;
-      grid-column-end: 11;
-      grid-row-start: 3;
-      grid-row-end: 4;
-      padding: 14px 0px 10px 4px;
-      font-size: 12px;
-      border-bottom: 1px solid whitesmoke;
-      color: #b3b3b3; }
-      .grid .wrapper .scarcity .red {
-        color: red;
-        padding-left: 6px; }
-    .grid .wrapper .pay {
-      grid-column-start: 1;
-      grid-column-end: 4;
-      grid-row-start: 4;
-      grid-row-end: 7;
-      padding-top: 35px;
-      text-align: center;
-      border-bottom: 1px solid whitesmoke;
-      border-right: 1px solid whitesmoke;
-      color: #b3b3b3; }
-    .grid .wrapper .annual-salary {
-      grid-column-start: 4;
-      grid-column-end: 11;
-      grid-row-start: 4;
-      grid-row-end: 5;
-      padding: 8px 0px 0px 8px;
-      font-size: 12px;
-      border-bottom: 1px solid whitesmoke; }
-      .grid .wrapper .annual-salary .year {
-        padding-left: 15px; }
-      .grid .wrapper .annual-salary .month {
-        float: right;
-        padding-right: 14px; }
-    .grid .wrapper .second-level {
-      grid-column-start: 4;
-      grid-column-end: 11;
-      grid-row-start: 5;
-      grid-row-end: 6;
-      padding: 8px 0px 0px 8px;
-      font-size: 12px;
-      border-bottom: 1px solid whitesmoke; }
-      .grid .wrapper .second-level .year {
-        padding-left: 14px; }
-      .grid .wrapper .second-level .month {
-        float: right;
-        padding-right: 15px; }
-    .grid .wrapper .fully-good {
-      grid-column-start: 4;
-      grid-column-end: 11;
-      grid-row-start: 6;
-      grid-row-end: 7;
-      padding: 8px 0px 0px 8px;
-      font-size: 12px;
-      border-bottom: 1px solid whitesmoke; }
-      .grid .wrapper .fully-good .year {
-        padding-left: 15px; }
-      .grid .wrapper .fully-good .month {
-        float: right;
-        padding-right: 15px; }
-    .grid .wrapper .at-school {
-      grid-column-start: 1;
-      grid-column-end: 11;
-      padding: 14px 0px 0px 5px;
+.grid .wrapper {
+  grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+  grid-template-rows: 10rem 3rem 3rem 2rem 2rem 2rem 3rem 3rem;
+  display: grid;
+  position: relative;
+  margin-top: 24px;
+  background: #fff;
+  cursor: pointer;
+  border: 1px solid #ddd; }
+  .grid .wrapper .head-portrait {
+    grid-column-start: 5;
+    grid-column-end: 1;
+    margin: 14px 4px 0px 8px;
+    background-repeat: no-repeat;
+    background: url("img/beijing,1.png");
+    background-repeat: no-repeat; }
+  .grid .wrapper .introduce {
+    grid-column-start: 11;
+    grid-column-end: 5; }
+    .grid .wrapper .introduce .engineer {
+      margin: 18px 0px 18px 0px;
+      font-size: 14px; }
+    .grid .wrapper .introduce .text {
       font-size: 14px;
-      border-bottom: 1px solid whitesmoke; }
-      .grid .wrapper .at-school .red {
-        color: red; }
-    .grid .wrapper .hint {
-      grid-column-start: 1;
-      grid-column-end: 11;
-      border-bottom: 1px solid whitesmoke;
-      padding-top: 15px;
-      padding-left: 5px;
-      font-size: 11px; }
-    .grid .wrapper .hovereffect {
-      display: none;
-      position: absolute;
-      height: 100%;
-      padding: 60px 40px 0 40px;
-      text-align: center;
-      background: #000000;
-      color: white;
-      opacity: 0.8;
-      -webkit-animation: cartoon 1s; }
-    .grid .wrapper .h4 {
-      font-size: 1.3rem; }
+      word-break: break-all;
+      width: 200px; }
+  .grid .wrapper .threshold {
+    grid-column-start: 6;
+    grid-column-end: 1;
+    padding: 0.8rem 0rem 0rem 0.5rem;
+    font-size: 12px;
+    border: 1px solid whitesmoke;
+    color: #b3b3b3; }
+    .grid .wrapper .threshold img {
+      height: 15px;
+      width: 16px;
+      margin-left: 8px; }
+  .grid .wrapper .complexity {
+    grid-column-start: 6;
+    grid-column-end: 11;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding-top: 15px;
+    font-size: 12px;
+    border-bottom: 1px solid whitesmoke;
+    border-top: 1px solid whitesmoke;
+    color: #b3b3b3; }
+    .grid .wrapper .complexity .degree {
+      padding-left: 8px; }
+    .grid .wrapper .complexity img {
+      height: 15px;
+      width: 16px;
+      margin-left: 5px; }
+  .grid .wrapper .growth-cycle {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    padding: 14px 0px 0px 4px;
+    font-size: 12px;
+    border-bottom: 1px solid whitesmoke;
+    border-right: 1px solid whitesmoke;
+    color: #b3b3b3; }
+    .grid .wrapper .growth-cycle .red {
+      padding-left: 6px;
+      color: red; }
+  .grid .wrapper .scarcity {
+    grid-column-start: 6;
+    grid-column-end: 11;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    padding: 14px 0px 10px 4px;
+    font-size: 12px;
+    border-bottom: 1px solid whitesmoke;
+    color: #b3b3b3; }
+    .grid .wrapper .scarcity .red {
+      color: red;
+      padding-left: 6px; }
+  .grid .wrapper .pay {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 7;
+    padding-top: 35px;
+    text-align: center;
+    border-bottom: 1px solid whitesmoke;
+    border-right: 1px solid whitesmoke;
+    color: #b3b3b3; }
+  .grid .wrapper .annual-salary {
+    grid-column-start: 4;
+    grid-column-end: 11;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    padding: 8px 0px 0px 8px;
+    font-size: 12px;
+    border-bottom: 1px solid whitesmoke; }
+    .grid .wrapper .annual-salary .year {
+      padding-left: 15px; }
+    .grid .wrapper .annual-salary .month {
+      float: right;
+      padding-right: 14px; }
+  .grid .wrapper .second-level {
+    grid-column-start: 4;
+    grid-column-end: 11;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    padding: 8px 0px 0px 8px;
+    font-size: 12px;
+    border-bottom: 1px solid whitesmoke; }
+    .grid .wrapper .second-level .year {
+      padding-left: 14px; }
+    .grid .wrapper .second-level .month {
+      float: right;
+      padding-right: 15px; }
+  .grid .wrapper .fully-good {
+    grid-column-start: 4;
+    grid-column-end: 11;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    padding: 8px 0px 0px 8px;
+    font-size: 12px;
+    border-bottom: 1px solid whitesmoke; }
+    .grid .wrapper .fully-good .year {
+      padding-left: 15px; }
+    .grid .wrapper .fully-good .month {
+      float: right;
+      padding-right: 15px; }
+  .grid .wrapper .at-school {
+    grid-column-start: 1;
+    grid-column-end: 11;
+    padding: 14px 0px 0px 5px;
+    font-size: 14px;
+    border-bottom: 1px solid whitesmoke; }
+    .grid .wrapper .at-school .red {
+      color: red; }
+  .grid .wrapper .hint {
+    grid-column-start: 1;
+    grid-column-end: 11;
+    border-bottom: 1px solid whitesmoke;
+    padding-top: 15px;
+    padding-left: 5px;
+    font-size: 11px; }
+  .grid .wrapper .hovereffect {
+    display: none;
+    position: absolute;
+    height: 100%;
+    padding: 60px 40px 0 40px;
+    text-align: center;
+    background: #000000;
+    color: white;
+    opacity: 0.8;
+    -webkit-animation: cartoon 1s; }
+  .grid .wrapper .h4 {
+    font-size: 1.3rem; }
 
 .hovereffect {
   display: none;
@@ -227,7 +226,10 @@ body {
   -webkit-animation: cartoon 1s; }
 
 h4 {
-  font-size: 1.3rem; }
+  padding: 26px 0px;
+  margin: 0;
+  font-size: 1.3rem;
+  border-bottom: 1px solid #b3b3b3; }
 
 .wrapper:hover .hovereffect {
   display: block; }
