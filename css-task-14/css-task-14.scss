@@ -1,6 +1,5 @@
 body{
   margin: 0;
-  background-color: #fafafa;
 }
 .tall{
   height: 7vw;
@@ -110,22 +109,26 @@ p{
 .dotdot:hover{
   background-color: #29b078;
 }
-.cooperation{
+.cooperation {
   display: flex;
   justify-content: space-around;
   padding: 0;
-  background-color: #ffffff;
-  .enterprise{
-    display: flex;
-    justify-content: center;
-    margin: 2px;
-    background-color: white;
-    .logo{
-      height: 160px;
-      width: 222px;
-    }
-    .logo:hover {
-      box-shadow: 0 0 5px 2px #a3a3a3;
+  .picture {
+    padding: 0;
+    .enterprise {
+      display: flex;
+      justify-content: center;
+      margin: 2px;
+      background-color: white;
+
+      .logo {
+        height: 160px;
+        width: 222px;
+      }
+
+      .logo:hover {
+        box-shadow: 0 0 5px 2px #a3a3a3;
+      }
     }
   }
 }

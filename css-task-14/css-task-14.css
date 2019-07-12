@@ -1,6 +1,5 @@
 body {
-  margin: 0;
-  background-color: #fafafa; }
+  margin: 0; }
 
 .tall {
   height: 7vw; }
@@ -100,18 +99,19 @@ p {
 .cooperation {
   display: flex;
   justify-content: space-around;
-  padding: 0;
-  background-color: #ffffff; }
-  .cooperation .enterprise {
-    display: flex;
-    justify-content: center;
-    margin: 2px;
-    background-color: white; }
-    .cooperation .enterprise .logo {
-      height: 160px;
-      width: 222px; }
-    .cooperation .enterprise .logo:hover {
-      box-shadow: 0 0 5px 2px #a3a3a3; }
+  padding: 0; }
+  .cooperation .picture {
+    padding: 0; }
+    .cooperation .picture .enterprise {
+      display: flex;
+      justify-content: center;
+      margin: 2px;
+      background-color: white; }
+      .cooperation .picture .enterprise .logo {
+        height: 160px;
+        width: 222px; }
+      .cooperation .picture .enterprise .logo:hover {
+        box-shadow: 0 0 5px 2px #a3a3a3; }
 
 .friendship {
   width: 100%;
