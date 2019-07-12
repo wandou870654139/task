@@ -1,5 +1,6 @@
 body{
   margin: 0;
+  background-color: #fafafa;
 }
 .tall{
   height: 7vw;
@@ -87,7 +88,6 @@ p{
   }
   .card-footer {
     padding: 0rem 1.25rem  0.75rem 1.25rem;
-    background-color: #FFFFFF;
     border:none;
     color: #a2a2a2;
   }
@@ -113,6 +113,7 @@ p{
   display: flex;
   justify-content: space-around;
   padding: 0;
+  background-color: #fafafa;
   .picture {
     padding: 0;
     .enterprise {
