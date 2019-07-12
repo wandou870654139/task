@@ -111,8 +111,8 @@ p {
       .cooperation .picture .enterprise .logo {
         height: 160px;
         width: 222px; }
-      .cooperation .picture .enterprise .logo:hover {
-        box-shadow: 0 0 5px 2px #a3a3a3; }
+  .cooperation .picture:hover {
+    box-shadow: 0 0 5px 2px #a3a3a3; }
 
 .friendship {
   width: 100%;
