@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>葡萄藤PPT</title>
+
+    <link rel="stylesheet" href="https://ptteng.github.io/PPT/css/reveal/reveal.css">
+
+    <!-- PPT主题，可以在/css/reveal/theme/中选择其他主题，目前暂时只能使用该模板 -->
+    <link rel="stylesheet" href="https://ptteng.github.io/PPT/css/reveal/theme/ptt.css">
+
+    <!-- syntax highlighting 代码高亮主题 -->
+    <link rel="stylesheet" href="https://ptteng.github.io/PPT/lib/reveal/css/zenburn.css">
+
+    <style>
+        .float {
+            float: left;
+        }
+
+        p.font {
+            text-align: left;
+        }
+    </style>
+
+
+    <!-- 打印和PDF输出样式 -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ?
+            'https://ptteng.github.io/PPT/css/reveal/print/pdf.css' : '../css/reveal/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+    <link rel="stylesheet" href="csstask.css">
+</head>
+
+<body>
+<img src="img/2018-11-16-A-css01/logo.png" alt="" usemap="#pttmap" class="base-logo" style="visibility: hidden">
+<map name="pttmap">
+    <area shape="rect" coords="0,0,276,58" href="http://www.jnshu.com/" alt="" target="_blank">
+</map>
+<div class="reveal slide center" role="application" data-transition-speed="default" data-background-transition="fade">
+            <div class="slides" style="width: 960px; height: 700px; left: 50%; top: 50%; bottom: auto; right: auto; transform: translate(-50%, -50%) scale(0.794571);">
+                <section class="present" style="top: 234px; display: block;">
+                    <h2>【CSS-task-11】 </h2>
+                    <h4>如何使用SASS？</h4>
+                    <p style="text-align: center;">分享人：李亚兵</p>
+                </section>
+                <section class="future" style="top: 3px; display: block;" hidden="" aria-hidden="true">
+                    <p>目录</p>
+                    <p>1. 背景介绍</p>
+                    <p>2. 知识剖析</p>
+                    <p>3. 常见问题</p>
+                    <p>4. 解决方案</p>
+                    <p>5. 编码实战</p>
+                    <p>6. 扩展思考</p>
+                    <p>7. 参考文献</p>
+                    <p>8. 更多讨论</p>
+                </section>
+                <section class="future" style="top: 267px; display: block;" hidden="" aria-hidden="true">
+                    <h3>一、背景介绍</h3>
+                </section>
+                <section class="future" style="top: 190px; display: none;" hidden="" aria-hidden="true">
+                    <p>Sass是对 CSS 的扩展，让 CSS 语言更强大、优雅。 它允许你使用变量、嵌套规则、 mixins、导入等众多
+                        功能， 并且完全兼容 CSS 语法。 Sass 有助于保持大型样式表结构良好， 同时也让你能够快速开始小型项
+                        目， 特别是在搭配 Compass 样式库一同使用时。</p>
+                </section>
+                <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
+                    <h3>二、知识剖析</h3>
+                </section>
+                <section class="future" style="top: 188px; display: none;" hidden="" aria-hidden="true">
+                    <h3>什么是Sass？</h3>
+                        <p>Sass（Syntactically Awesome Style Sheets）是一个相对新的编程语言，Sass为web前端开发而生，可以
+                            用它来定义一套新的语法规则和函数，以加强和提升CSS。通过这种新的编程语言，你可以使用最高效的
+                            方式，以少量的代码创建复杂的设计。它改进并增强了CSS的能力，增加了变量，局部和函数这些特性。而
+                            这只是Sass一部分利器！
+                    </p>
+                </section>
+                <section class="future" style="top: 188px; display: none;" hidden="" aria-hidden="true">
+                    <h3>Sass与CSS有什么关系？</h3>
+                    <p>Sass正是加入CSS的语法规则。你仍然可以在Sass中写普通的CSS语句，它会工作得很好，其实，当你写Sass代码
+                        时，文件会被编译成一个标准的CSS文件,会有专门的软件来完成Sass代码让浏览器识别和转换成CSS代 码。
+                    </p>
+                </section>
+                <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
+                    <p>安装Sass注意事项</p>
+                    <p>sass基于Ruby语言开发而成，因此安装sass前需要安装Ruby。（注:mac下自带Ruby无需在安装Ruby!） window下安
+                        装SASS首先需要安装Ruby，先从官网下载Ruby并安装。</p>
+                    <p>特别提醒一下在安装sass的时候因为淘宝源已经不维护了要换成china源</p>
+                </section>
+                <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
+                    <h3>1、变量 $</h3>
+                    <p>变量以符号$开头，赋值方法与 CSS 属性的写法一致，通过变量名来引用，而无需重复书写。</p>
+                    <p>全局变量，局部变量</p>
+                    <p>变量支持块级作用域，嵌套规则内定义的变量只能在嵌套规则内使用（局部变量），不在嵌套规则内定义的变
+                        量则可在任何地方使用（全局变量）。将局部变量转换为全局变量可以添加 !global 声明。</p>
+                </section>
+                <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
+                    <h3>2、嵌套</h3>
+                    <p>Sass中重复写选择器是非常恼人的。如果要写一大串指向页面中同一块的样式时，往往需要一遍又一遍地写同一个ID，Sass 允许将一套 CSS 样式嵌套进另一套样式中，内层的样式将它外层的选择器作为父选择器。它可以避免重复书写
+                        父选择器，使结构更加清晰明了，样式的可读性更高。</p>
+                    <p>注意：嵌套的层数尽量不要超过三层，过多的嵌套容易造成代码体积的臃肿 不利于浏览器的渲染。</p>
+                </section>
+                <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
+                    <h3>父选择器的标识符&;</h3>
+                    <p>嵌套应用于 :hover 的伪类时则不能简单地用嵌套了，这时候就需要使用父选择器&。父选择器 & 可以简单地理解为用 & 来表示父标签。</p>
+                    <p>在使用嵌套规则时，父选择器能对于嵌套规则如何解开提供更好的控制。它就是一个简单的&符号，且可以放在
+                        任何一个选择器可出现的地方，当包含父选择器标识符的嵌套规则被打开时，它不会像后代选择器那样进行拼接，而是&被父选择器直接替换。</p>
+                </section>
+                <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
+                    <h3>3、混合器</h3>
+                        <p>如果你的整个网站中有几处小小的样式类似（例如一致的颜色和字体），那么使用变量来统一处理这种情况是非常不错的
+                            选择。但是当你的样式变得越来越复杂，你需要大段大段的重用样式的代码，独立的变量就没办法应付这种情况了。你可
+                            以通过sass的混合器实现大段样式的重用。</p>
+                    <p>混合器使用@mixin标识符定义。看上去很像其他的CSS @标识符，比如说@media或者@font-face。这个标识符给一大段样
+                        式赋予一个名字，这样你就可以轻易地通过引用这个名字重用这段样式</p>
+                </section>
+                <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
+                    <p>混合器中不仅可以包含属性，也可以包含css规则，包含选择器和选择器中的属性。</p>
+                    <p>当一个包含css规则的混合器通过@include包含在一个父规则中时，在混合器中的规则最终会生成父规则中的嵌套规则。</p>
+                </section>
+                <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
+                    <h3>4、继承</h3>
+                    <p>使用sass的时候，减少重复的主要特性就是选择器继承。 选择器继承是说一个选择器可以继承为另一个选择器定义的所有样式。
+                        这个通过@extend语法实现</p>
+                        <p>要继承的不仅仅是一个类名，可以是一个id也可以是一个元素，也可以是某个状态，
+                            跟混合器相比，继承生成的css代码相对更少。因为继承仅仅是重复选择器，而不会重复属性，
+                            所以使用继承往往比混合器生成的css体积更小。如果你非常关心你站点的速度，请牢记这一点。</p>
+                    <p>继承遵从css层叠的规则。当两个不同的css规则应用到同一个html元素上时，并且这两个不同
+                        的css规则对同一属性的修饰存在不同的值，css层叠规则会决定应用哪个样式。相当直观：
+                        通常权重更高的选择器胜出，如果权重相同，定义在后边的规则胜出</p>
+                </section>
+                <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
+                    <h3>5、静默注释</h3>
+                    <p>css中注释的作用包括帮助你组织样式、以后你看自己的代码时明白为什么这样写，以及简单的样式说明。但是，你并不希望每
+                        个浏览网站源码的人都能看到所有注释。 sass另外提供了一种不同于css标准注释格式/* ... */的注释语法，即静默注释，其
+                        内容不会出现在生成的css文件中。静默注释的语法跟JavaScriptJava等类C的语言中单行注释的语法相同，它们以//开头，注
+                        释内容直到行末。</p>
+                </section>
+                <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
+                        <h3>三、常见问题</h3>
+                </section>
+                <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
+                        <p>@extend继承和@include混入（mixin）有什么区别呢，都是将已存在的代码进行复用?</p>
+                </section>
+
+                <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
+                        <h3>四、解决办法</h3>
+                </section>
+                <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
+                    <p>1、如果你的代码块中涉及到变量，建议使用混合宏来创建相同的代码块。</p>
+                    <p>  2、如果你的代码块不需要传任何变量参数，而且有一个基类已在文件中存在，那么建议使用 Sass 的继承。
+                        混合宏写的代码 会有冗余。而用继承写的代码冗余性较低。</p>
+                </section>
+                <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
+                    <h3>五、编码实战</h3>
+                </section>
+                <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
+                    <h3>六、拓展思考</h3>
+                </section>
+                <section class="future" style="top: 178px; display: none;" hidden="" aria-hidden="true">
+                    <p>sass和less的区别</p>
+                    <p>1.编译环境不一样 </p>
+                    <p>Sass的安装需要Ruby环境，是在服务端处理的，而Less是需要引入less.
+                        js来处理Less代码输出css到浏览器，也可以在开发环节使用Less，然后编译成css文件，
+                        直接放到项目中，也有 Less.app、SimpleLess、CodeKit.app这样的工具，也有在线编译地址</p>
+                    <p>2.变量符不一样，Less是@，而Scss是$，而且变量的作用域也不一样。</p>
+                    <p>3.输出设置，Less没有输出设置，Sass提供4中输出选项：nested, compact, compressed 和 expanded</p>
+                    <p>4.Sass支持条件语句，可以使用if{}else{},for{}循环等等。而Less不支持。</p>
+                </section>
+                <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
+                <h3>七、参考文献</h3>
+                </section>
+                <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
+                    <h3>源自sass中文网</h3>
+                </section>
+                <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
+                    <h3>八、更多讨论</h3>
+                </section>
+                <section class="future" style="top: 202.5px; display: none;" hidden="" aria-hidden="true">
+                    <h3>感谢观看</h3>
+                </section>
+            </div>
+        <div class="backgrounds"><div class="slide-background present" data-loaded="true" style="display: block;"></div><div class="slide-background future" data-loaded="true" style="display: block;"></div><div class="slide-background future" data-loaded="true" style="display: block;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div><div class="slide-background future" data-loaded="true" style="display: none;"></div></div><div class="progress" style="display: block;"><span style="width: 0px;"></span></div><aside class="controls" style="display: block;"><button class="navigate-left" aria-label="previous slide"></button><button class="navigate-right enabled" aria-label="next slide"></button><button class="navigate-up" aria-label="above slide"></button><button class="navigate-down" aria-label="below slide"></button></aside><div class="slide-number" style="display: none;"></div><div class="speaker-notes" data-prevent-swipe=""></div><div class="pause-overlay"></div><div id="aria-status-div" aria-live="polite" aria-atomic="true" style="position: absolute; height: 1px; width: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px);">
+
+                    分享人：李亚兵
+                </div></div>
+<script src="https://ptteng.github.io/PPT/lib/reveal/js/head.min.js"></script>
+<script src="https://ptteng.github.io/PPT/lib/reveal/reveal.js"></script>
+        <script>
+            Reveal.initialize({
+                history: true,
+                dependencies: [{
+                    src: 'https://ptteng.github.io/PPT/plugin/markdown/marked.js'
+                },
+                    {
+                        src: 'https://ptteng.github.io/PPT/plugin/markdown/markdown.js'
+                    },
+                    {
+                        src: 'https://ptteng.github.io/PPT/plugin/notes/notes.js',
+                        async: true
+                    },
+                    {
+                        src: 'https://ptteng.github.io/PPT/plugin/highlight/highlight.js',
+                        async: true,
+                        callback: function () {
+                            hljs.initHighlightingOnLoad();
+                        }
+                    }
+                ]
+            });
+        </script>
+    
+    </body></html>
