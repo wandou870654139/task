@@ -3,22 +3,16 @@ var box = document.getElementsByClassName('box');
 var timing;
 //开始闪
 function start() {
-    if(start) {
-        start = false;
-        //事件
         window.clearInterval(timing);
         timing=window.setInterval(scheme, 1000);
-        console.log(start()).attr("data-val");
-//定时器
-        setTimeout(function() {
-            start = true;
-        }, 1000);
+    document.getElementById("a").disabled=true;//禁止点击
     }
-}
+// }
 //结束闪
 function end() {
     window.clearInterval(timing);
     recover();
+    document.getElementById("a").disabled=false;//启动点击
 }
 //全部返回初始黄色
 function recover() {
