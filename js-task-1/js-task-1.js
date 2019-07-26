@@ -3,8 +3,17 @@ var box = document.getElementsByClassName('box');
 var timing;
 //开始闪
 function start() {
-    window.clearInterval(timing);
-    timing=window.setInterval(scheme, 1000);
+    if(start) {
+        start = false;
+        //事件
+        window.clearInterval(timing);
+        timing=window.setInterval(scheme, 1000);
+        console.log(start()).attr("data-val");
+//定时器
+        setTimeout(function() {
+            start = true;
+        }, 1000);
+    }
 }
 //结束闪
 function end() {
