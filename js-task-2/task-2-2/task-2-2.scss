@@ -1,0 +1,131 @@
+@mixin flex{
+  display: flex;
+  align-items: center;
+}
+body{
+  margin: auto;
+  max-width:780px;
+  min-width: 320px;
+  background-color: #f0f0f0;
+}
+.coat {
+  margin: auto;
+  border: 1px solid #e1e5e7;
+  background-color: #ffffff;
+}
+header {
+  height: 3rem;
+  background-color: #29BDE0;
+  .height{
+    padding-top: .5rem;
+    .menu {
+      width: 34px;
+      height: 4px;
+      margin-bottom: 7px;
+      background: #ffffff;
+      margin-left: 24px;
+    }
+  }
+}
+main {
+  text-align: center;
+  .last-time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4.5rem;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    color: #9A9A9A;
+    background-color: #ffffff;
+    border: 1px solid #e1e5e7;
+    .dexter{
+      width: 12px;
+      height: 12px;
+    }
+    img {
+      height: 30px;
+      width: 18px;
+      margin-right: 12px;
+    }
+    p{
+      font-size: 1.5rem;
+    }
+  }
+  .coat {
+    p {
+      margin: 1rem 0;
+      color: #787878;
+      font-size: 1rem;
+    }
+    .ghost {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      height: 3rem;
+      line-height: 1.6rem;
+      font-size: 1.5rem;
+      text-align: center;
+      color: #fbb435;
+      padding-top: 1rem;
+      background-color: #ffffff;
+      border-bottom: 1px solid #fbb435;
+    }
+    .brief {
+      @include flex;
+      justify-content: center;
+      height: 6rem;
+      width: 82%;
+      margin: auto;
+      font-size: 1.7rem;
+      color: #ffffff;
+      background-color: #69d1e9;
+    }
+    .suspect {
+      @include flex;
+      justify-content: space-evenly;
+      .wide {
+        width: 16px;
+      }
+      .brie {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 6rem;
+        width: 82%;
+        margin: 0;
+        font-size: 1.7rem;
+        color: #ffffff;
+        background-color: #69d1e9;
+      }
+      img {
+        width: 16px;
+        height: 40px;
+      }
+    }
+    .user {
+      display: block;
+      margin-top: 1rem;
+      margin-bottom: .4rem;
+      color: #787878;
+      font-size: 1rem;
+    }
+    .circle {
+      @include flex;
+      justify-content: center;
+      height: 14px;
+      padding-bottom: 8px;
+      .dot {
+        height: .8rem;
+        width: .8rem;
+        margin-left: 9px;
+        background-color: #C9C9C9;
+        border-radius: 50%;
+      }
+      .dot:hover {
+        background-color: #69d1e9;
+      }
+    }
+  }
+}

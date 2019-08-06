@@ -5,14 +5,14 @@ var timing;
 function start() {
         window.clearInterval(timing);
         timing=window.setInterval(scheme, 1000);
-    document.getElementById("a").disabled=true;//禁止点击
+    document.getElementById("just").disabled=true;//禁止点击
     }
 // }
 //结束闪
 function end() {
     window.clearInterval(timing);
     recover();
-    document.getElementById("a").disabled=false;//启动点击
+    document.getElementById("just").disabled=false;//启动点击
 }
 //全部返回初始黄色
 function recover() {
@@ -49,6 +49,7 @@ function sort() {
     var arr = [0, 1, 2, 3, 4, 5, 6, 7, 8];
     //空数组.
     newArr = [];
+
 //创建一个有序的从左到右0-8的循环，用于空数组下标
     for (var i = 0, len = arr.length; i < len; i++) {
         // console.log(len-i);
@@ -72,7 +73,7 @@ function sort() {
 
         // console.log(i)
     }
-    return newArr;
+    // return newArr;
 
 // console.log(sort());
 

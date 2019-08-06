@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>设置页面</title>
+    <link rel="stylesheet" href="task-2-1.css">
+</head>
+<body>
+<header>
+    <img src="../img/Back _ Icon.png"/>
+    <span>设置页面</span>
+    <img src="../img/QQ.lnk.png"/></header>
+<main>
+    <div class="themes">
+        <div class="left">
+            <span class="matching">玩家配比</span>
+        </div>
+        <div class="main-right">
+            <div class="population">
+                <div class="killer">
+                    <div class="number"></div>
+                    <div>杀手<span id="people1">&emsp;</span>人</div>
+                </div>
+                <div class="cop">
+                    <div class="number"></div>
+                    <div>平民<span id="people2">&emsp;</span>人</div>
+                </div>
+            </div>
+            <div class="set">点击设置<img src="../img/pencil.png"/></div>
+        </div>
+    </div>
+    <div class="frame">
+        <div class="civilian">
+            水民词组
+            <input maxlength="10" name="password" placeholder="限十个字以内">
+        </div>
+        <div class="civilian">
+            幽灵词组
+            <input maxlength="10" name="password" placeholder="限十个字以内">
+        </div>
+    </div>
+</main>
+<footer>
+<div class="foot">
+    <div class="tool">
+        玩家人数
+        <input id="qwe" class="setting" onblur="start()" onload="onload()" maxlength="2" name="password" oninput = "value=value.replace(/[^\d]/g,'')" >
+        人
+        <div class="yellow">(玩家人数4-18人)</div>
+    </div>
+    <div class="text">
+        <button id="advance" onclick="reduce()">-</button>
+        <input class="slide" id="slip" onchange="long()" onclick="start()" type="range" value="4" min="4" max="18" name="password">
+        <button id="retreat" onclick="increase()">+</button>
+    </div>
+</div>
+    <a class="landing" onclick="login()" >登陆</a>
+</footer>
+</body>
+<script src="task-2-1.js"></script>
+</html>
