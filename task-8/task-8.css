@@ -18,10 +18,24 @@ body{
 }
 @media screen and (max-width: 780px){
     .text-box {
-        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 0;
+        font-size: 14px;
+        color: #29b078;
+        float: right;
     }
     .zenith{
         display: none;
+    }
+    .navbar-toggler {
+        padding: .25rem .75rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        background-color: transparent;
+        border: 1px solid transparent;
+        border-radius: .25rem;
     }
 }
 .san{
@@ -59,9 +73,7 @@ body{
     display: flex;
     justify-content: space-between;
 }
-.navbar-toggler {
-    float: right;
-}
+
 .active {
     color: #ffffff;
 }
@@ -93,6 +105,7 @@ body{
         border-left:1px dashed #ffffff;
     }
 }
+
 .nav-link {
     padding: 0;
     border-bottom:4px solid #29b078;
