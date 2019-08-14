@@ -29,7 +29,7 @@ $(function () {
             var minus =people.val();
             minus++;
             people.val([minus++]);
-            slip.val([people.val()])
+            slip.val([people.val()]);
             allocation();
         }
     });
