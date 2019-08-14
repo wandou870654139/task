@@ -14,10 +14,11 @@ header{
   font-size: 30px;
   img{
     height: 47px;
-    margin: 0 8px;
+    margin: 1%;
   }
 }
 main {
+  background-color: #f0f0f0;
   .themes {
     display: flex;
     background-color: #FFFFFF;
@@ -83,7 +84,7 @@ main {
   }
   .frame{
     padding: 0;
-    margin: 0 8px;
+    margin: 1%;
     background-color: #fff;
     overflow: hidden;
   }
@@ -103,7 +104,7 @@ main {
 footer{
   .foot{
     height: 170px;
-    margin: 0 8px;
+    margin: 1%;
     background-color: #fff;
 
     .tool{
@@ -138,12 +139,12 @@ footer{
         border-radius: 10px;
       }
       input[type=range]::-webkit-slider-thumb {
-        -webkit-appearance: none; /*清除系统默认样式*/
-        height: 22px; /*拖动块高度*/
-        width: 22px; /*拖动块宽度*/
-        background: #fff; /*拖动块背景*/
-        border-radius: 40%; /*外观设置为圆形*/
-        border: solid 1px #ddd; /*设置边框*/
+        -webkit-appearance: none;
+        height: 22px;
+        width: 22px;
+        background: #fff;
+        border-radius: 40%;
+        border: solid 1px #ddd;
 
       }
       .setting{
