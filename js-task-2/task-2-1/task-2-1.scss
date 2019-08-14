@@ -142,8 +142,9 @@ footer{
         height: 22px; /*拖动块高度*/
         width: 22px; /*拖动块宽度*/
         background: #fff; /*拖动块背景*/
-        border-radius: 80%; /*外观设置为圆形*/
+        border-radius: 40%; /*外观设置为圆形*/
         border: solid 1px #ddd; /*设置边框*/
+
       }
       .setting{
         -webkit-appearance: none;
@@ -164,6 +165,8 @@ footer{
         height: 10px;
         background: #FAB344;
         border-radius: 10px;
+        outline: none;
+        box-shadow: 0 1px 1px #def3f8, inset 0 .125em .125em #0d1112;
       }
     }
   }

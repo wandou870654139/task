@@ -3,6 +3,7 @@ var slip = document.getElementById("slip");
 var two = document.getElementById("qwe");
 two.value=4;
 //玩家人数的输入框与滚动条同步
+
 function start() {
     if (two.value >= 4 && two.value <=18) {
         slip.value=two.value;
@@ -12,11 +13,11 @@ function start() {
         slip.value=4;
         //人数超出范围的话，弹出警告框，并且将方框和滑块的值重置为4
     }
-    person()
 }
 //滚动条改变玩家人数随着改变
 function long() {
     two.value=slip.value;
+    person()
 }
 //减的按钮，减掉玩家总人数的值
 function reduce(){
@@ -50,9 +51,6 @@ function person() {
     document.getElementById("people1").innerHTML=kill;
     document.getElementById("people2").innerHTML=civilian;
 
-    var weekArray = ['arr1=[]']
-    localStorage.setItem('weekDay',JSON.stringify(weekArray));
-
     //建立空数组
     var arr1=[];
     //分配人数
@@ -73,14 +71,14 @@ function person() {
             brr.push(arr1[temp]);
             arr1.splice(temp, 1);
         }
-        console.log(brr);
+        //
+        data=brr;
     }
     test();
     randomId();
 }
 function login() {
-    person();
-
+    localStorage.setItem('weekDay',JSON.stringify(data));
 }
 
 
@@ -91,10 +89,3 @@ function login() {
 
 
 
-
-
-// person();
-// function onload() {
-//     document.getElementById("two").value=8;
-//     two(8);
-// }
