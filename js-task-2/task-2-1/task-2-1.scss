@@ -140,11 +140,12 @@ footer{
       }
       input[type=range]::-webkit-slider-thumb {
         -webkit-appearance: none;
-        height: 22px;
-        width: 22px;
-        background: #fff;
-        border-radius: 40%;
-        border: solid 1px #ddd;
+        height: 20px;
+        width: 24px;
+        background:#ff0000;
+        border-radius: 20%;
+        border: solid 3px #ddd;
+
 
       }
       .setting{
