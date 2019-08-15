@@ -4,12 +4,13 @@ var people = $('#people');
 $(function () {
     $('#people').blur(function () {
         if (people.val() >= 4 && people.val() <= 18) {
-            slip.val([people.val()])
+            slip.val([people.val()]);
             console.log(slip.val());
         } else {
             alert('请输入4-18以内的数字');
+            $("#people").val("4");
 
-            // 人数超出范围的话 ，弹出警告框，并且将方框和滑块的值重置为4
+            // 人数超出范围的话 ，弹 警告框，并且将方框和滑块的值重置为4
         }
         allocation()
     });
@@ -23,8 +24,6 @@ $(function () {
     $("#retreat").click(function () {
         if (people.val()>= 18) {
             alert("人数太多，请分开游戏");
-            people=4;
-            slip=4;
         } else {
             var minus =people.val();
             minus++;
