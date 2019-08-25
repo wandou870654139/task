@@ -1,0 +1,120 @@
+body{
+  max-width: 780px;
+  min-width: 320px;
+  margin: auto;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+  font-size: 2rem;
+  color: #FFFFFF;
+  border-bottom: 1px solid #d9d9d9;
+  background-color: #29bde0;
+  img{
+    height: 2.2rem;
+    width: 2.2rem;
+    margin: 0 .4rem;
+  }
+}
+main {
+  max-width: 780px;
+  min-width: 320px;
+  margin: auto;
+  margin-bottom: 5rem;
+  .blue {
+    position: relative;
+    padding-top: 10rem;
+    width: 100%;
+    background-color: #29bde0;
+   img {
+     height: 9rem;
+     width: 16rem;
+     position: absolute;
+     transform: translate(-50%,-50%);
+     top: 6rem;
+     left: 50%;;
+    }
+    .content {
+      width: 75%;
+      margin: auto;
+      color: #ffc865;
+      .content-b {
+        font-size: 1.2rem;
+      }
+
+      .content-t {
+        font-size: 1rem;
+        color: #ffffff;
+        margin: 0;
+      }
+
+      .content-q {
+        color: #ffffff;
+        font-size: 1rem;
+        p {
+          margin: 0;
+        }
+      }
+
+
+    }
+  }
+    .list {
+      width: 75%;
+      margin: auto;
+      border-bottom: 1px solid #f0f0f0;
+      .first {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        .hour {
+          font-size: 1rem;
+          color: #e0e0e0;
+        }
+      }
+
+      .night {
+        font-size: 1rem;
+        color: #bcbcbc;
+      }
+    }
+  }
+
+//.house {
+//  height: 4vw;
+//  width: 4vw;
+//  margin-left: 2vw;
+//}
+//
+//.plaint {
+//  height: 4vw;
+//  width: 4vw;
+//  margin-right: 2vw;
+//}
+
+footer {
+  width: 100%;
+  max-width: 780px;
+  min-width: 320px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #29bde0;
+  height: 60px;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  margin: auto;
+  button{
+    width: 45%;
+    line-height: 50px;
+    text-align: center;
+    background: orange;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+}
+a{ text-decoration:none}

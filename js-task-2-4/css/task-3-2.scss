@@ -1,0 +1,107 @@
+body{
+  margin: auto;
+  max-width:780px;
+  min-width: 320px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  font-size: 30px;
+  color: #FFFFFF;
+  background-color: #29bde0;
+  border-bottom: 1px solid #d9d9d9;
+  a{
+    height: 46px;
+    margin: 1%;
+  }
+}
+main{
+  padding-top: 70px;
+  background-color: #29bde0;
+  .placard{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 548px;
+    .circle{
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 40px;
+      width: 40px;
+      margin-top: -16px;
+      font-size: 22px;
+      color: #f56b81;
+      background-color: #ffedc5;
+      border-radius: 50%;
+      border: 3px solid #fff;
+    }
+    .background{
+      display: flex;
+      justify-content: center;
+      width: 64%;
+      height: 94%;
+      border: 6px solid #fff;
+      background-color: #ffedc5;
+      #padishah{
+        height: 12em;
+        margin: auto;
+      }
+      .role {
+        display: none;
+        margin-top: 3em;
+        text-align: center;
+        img{
+          height: 12em;
+        }
+        .roleCivilian {
+          width: 80%;
+          margin: auto;
+          margin-top: 10px;
+          padding-top: 20px;
+          font-size: 30px;
+          color: #29bde0;
+          border-top: solid #fff;
+        }
+        .roleWord {
+          display: flex;
+          justify-content: center;
+          margin-top: 10px;
+          font-size: 24px;
+          color: #f56b81;
+        }
+        .roleXhint{
+          color: #ffc107;
+        }
+      }
+    }
+  }
+}
+footer{
+  display: flex;
+  height: 166px;
+  background-color: #29bde0;
+  .landing{
+    height: 70px;
+    width: 66%;
+    margin: auto;
+    font-size: 36px;
+    outline: none;
+    text-decoration: none;
+    color: #fff;
+    background-color: orange;
+    .landing{
+      display: flex;
+      justify-content: center;
+      margin: 6px 0px;
+    }
+    p{
+      line-height: 70px;
+      margin: 0;
+      font-size: 26px;
+    }
+  }
+}

@@ -1,0 +1,91 @@
+body {
+  max-width: 780px;
+  min-width: 320px;
+  margin: auto; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+  font-size: 2rem;
+  color: #FFFFFF;
+  border-bottom: 1px solid #d9d9d9;
+  background-color: #29bde0; }
+  header img {
+    height: 2.2rem;
+    width: 2.2rem;
+    margin: 0 .4rem; }
+
+main {
+  max-width: 780px;
+  min-width: 320px;
+  margin: auto;
+  margin-bottom: 5rem; }
+  main .blue {
+    position: relative;
+    padding-top: 10rem;
+    width: 100%;
+    background-color: #29bde0; }
+    main .blue img {
+      height: 9rem;
+      width: 16rem;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      top: 6rem;
+      left: 50%; }
+    main .blue .content {
+      width: 75%;
+      margin: auto;
+      color: #ffc865; }
+      main .blue .content .content-b {
+        font-size: 1.2rem; }
+      main .blue .content .content-t {
+        font-size: 1rem;
+        color: #ffffff;
+        margin: 0; }
+      main .blue .content .content-q {
+        color: #ffffff;
+        font-size: 1rem; }
+        main .blue .content .content-q p {
+          margin: 0; }
+  main .list {
+    width: 75%;
+    margin: auto;
+    border-bottom: 1px solid #f0f0f0; }
+    main .list .first {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end; }
+      main .list .first .hour {
+        font-size: 1rem;
+        color: #e0e0e0; }
+    main .list .night {
+      font-size: 1rem;
+      color: #bcbcbc; }
+
+footer {
+  width: 100%;
+  max-width: 780px;
+  min-width: 320px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #29bde0;
+  height: 60px;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  margin: auto; }
+  footer button {
+    width: 45%;
+    line-height: 50px;
+    text-align: center;
+    background: orange;
+    border-radius: 10px;
+    cursor: pointer; }
+
+a {
+  text-decoration: none; }
+
+/*# sourceMappingURL=task-4-2.css.map */

@@ -1,0 +1,128 @@
+html{
+  min-width: 320px;
+  max-width: 780px;
+  margin: auto;
+  background-color: #fff;
+}
+body{
+  margin: auto;
+  max-width:780px;
+  min-width: 320px;
+  background-color: #f0f0f0;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  font-size: 30px;
+  color: #FFFFFF;
+  background-color: #29bde0;
+  border: 1px solid #c9c9c9;
+  a{
+    height: 46px;
+    margin: 1%;
+  }
+}
+main {
+  margin: 1%;
+  .time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #c9c9c9;
+    background-color: #fff;
+    //margin: 0.8rem .6rem;
+    p{
+      color: #29BDE0;
+      font-size: 0.9rem;
+    }
+    img{
+      height: 8px;
+      width: 16px;
+    }
+  }
+  .epiboly {
+    display: block;
+    .list {
+      height: 3.125rem;
+      display: flex;
+      align-items: center;
+
+      .listBroadside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 2.5rem;
+        height: 3.125rem;
+
+        p {
+          height: 1.6rem;
+          border: 2px solid #c9c9c9;
+          margin: 0 auto;
+        }
+img{
+  width: 20px;
+  height: 20px;
+  border: 1px solid #c9c9c9;
+  border-radius: 50%;
+  padding: 0.3rem;
+}
+        .listClick {
+          width: 100%;
+          margin: 0.3125rem 3.125rem 0.3125rem 0;
+          color: #fff;
+          font-size: 0.9rem;
+          line-height: 2.5rem;
+          text-align: center;
+          background-color: #29bde0;
+        }
+      }
+      .listPiece {
+        width: 95%;
+        display: flex;
+        .listTriangle {
+          width: 0.625rem;
+          margin: 1.25rem 0 1.25rem -1rem;
+          border-width: 0.3125rem 0.625rem;
+          border-style: solid;
+          border-color: transparent #29bde0 transparent transparent;
+        }
+        .listClick{
+          width: 100%;
+          margin: 0.3125rem 3.125rem 0.3125rem 0;
+          color: #fff;
+          font-size: 0.9rem;
+          line-height: 2.5rem;
+          text-align: center;
+          background-color: #29bde0;
+}
+      }
+    }
+  }
+}
+footer{
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-width: 320px;
+  max-width: 780px;
+  width: 100%;
+  height: 2rem;
+  background-color: rgba(33, 150, 243, 0.5);
+  button{
+    width: 40%;
+    height: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    text-align: center;
+    background: #fbb435;
+    outline: none;
+    cursor: pointer;
+  }
+}

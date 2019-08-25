@@ -103,7 +103,8 @@ audio{
     height: 95px;
 }
 .sit{
-    width: 23vw;
+    width: 16vw;
+    max-width: 16vw;
     height: 6vw;
     margin-top: 3vw;
     opacity:0.0

@@ -1,0 +1,150 @@
+body {
+  margin: auto;
+  max-width: 780px;
+  min-width: 320px;
+  background-color: #eeeeee; }
+
+header {
+  display: flex;
+  height: 60px;
+  background-color: #29bde0;
+  color: #FFFFFF;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30px; }
+  header a {
+    height: 47px;
+    margin: 1%; }
+
+main {
+  background-color: #f0f0f0; }
+  main .themes {
+    display: flex;
+    background-color: #FFFFFF;
+    margin: 1%; }
+    main .themes .left {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 350px;
+      width: 15%;
+      font-size: 34px;
+      flex-direction: column;
+      border: 1px solid #d9d9d9;
+      writing-mode: vertical-lr; }
+    main .themes .main-right {
+      width: 85%; }
+      main .themes .main-right .population {
+        display: flex; }
+        main .themes .main-right .population .killer {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 280px;
+          width: 50%;
+          border: 1px solid #d9d9d9; }
+          main .themes .main-right .population .killer .number {
+            height: 6px;
+            width: 6px;
+            margin-right: 6px;
+            background-color: #ffc107; }
+        main .themes .main-right .population .cop {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 280px;
+          width: 50%;
+          border: 1px solid #d9d9d9; }
+          main .themes .main-right .population .cop .number {
+            height: 6px;
+            width: 6px;
+            margin-right: 6px;
+            background-color: #29bde0; }
+      main .themes .main-right .set {
+        font-size: 26px;
+        color: #29bde0;
+        text-align: center;
+        line-height: 70px; }
+  main .frame {
+    padding: 0;
+    margin: 1%;
+    background-color: #fff;
+    overflow: hidden; }
+  main .civilian {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid #d9d9d9;
+    color: #a1a1a1;
+    margin: 10px 18px 10px 18px; }
+    main .civilian input {
+      border: 0;
+      height: 28px;
+      outline: none; }
+
+footer .foot {
+  height: 170px;
+  margin: 1%;
+  background-color: #fff; }
+  footer .foot .tool {
+    display: flex;
+    padding-top: 20px;
+    padding-left: 20px;
+    background-color: #fff;
+    margin: 10px 10px 60px 20px; }
+    footer .foot .tool .move {
+      margin-left: 20px; }
+    footer .foot .tool .setting {
+      height: 22px;
+      width: 30px;
+      text-align: center;
+      color: #fab344;
+      background-color: #f4f5f5; }
+    footer .foot .tool .yellow {
+      color: #fab344; }
+  footer .foot .text {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+    footer .foot .text .slide input[type=range] {
+      -webkit-appearance: none;
+      width: 70%;
+      height: 10px;
+      background: #FAB344;
+      border-radius: 10px; }
+    footer .foot .text input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      height: 20px;
+      width: 24px;
+      background: #ff0000;
+      border-radius: 20%;
+      border: solid 3px #ddd; }
+    footer .foot .text .setting {
+      -webkit-appearance: none;
+      height: 10px;
+      background: #FAB344;
+      border-radius: 10px; }
+    footer .foot .text button {
+      line-height: 30px;
+      width: 30px;
+      font-size: 26px;
+      color: #ffc107;
+      padding: 0; }
+    footer .foot .text .slide {
+      -webkit-appearance: none;
+      width: 70%;
+      height: 10px;
+      background: #FAB344;
+      border-radius: 10px;
+      outline: none;
+      box-shadow: 0 1px 1px #def3f8, inset 0 .125em .125em #0d1112; }
+footer .landing {
+  display: block;
+  line-height: 60px;
+  margin: 10px 8px;
+  color: #dfff;
+  font-size: 30px;
+  text-decoration: none;
+  text-align: center;
+  background-color: #ffc107; }
+
+/*# sourceMappingURL=task-2-1.css.map */

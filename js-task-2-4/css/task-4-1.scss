@@ -1,0 +1,138 @@
+
+body{
+  margin: auto;
+  max-width:640px;
+  min-width: 320px;
+}
+header {
+  margin: auto;
+  max-width:640px;
+  min-width: 320px;
+  background-color: #29bde0;
+  .identity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    font-size: 30px;
+    color: #FFFFFF;
+    border-bottom: 1px solid #d9d9d9;
+    a {
+      height: 46px;
+      margin: 1%;
+    }
+  }
+  .nav {
+    background-color: rgba(255, 255, 255, 0.6);
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: #999999;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    .nav-text {
+      margin-left: 50px;
+    }
+
+    .nav-frequency {
+      width: 100px;
+      margin-bottom: 5px;
+      margin-top: -43px;
+      display: flex;
+
+      img {
+        height: 30px;
+        width: 30px;
+        margin-left: 53px;
+        margin-top: 77px;
+      }
+      .nav-start {
+        opacity: 0.0;
+        transform: rotate(90deg);
+      }
+      audio {
+        width: 110px;
+        margin: 58px -111px 22px 0px;
+      }
+    }
+  }
+  .nav-triangle {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 15px solid rgba(255, 255, 255, 0.6);
+    margin-left: 63px;
+  }
+  .nav-explain {
+    margin-left: 67px;
+    font-size: 12px;
+    color: #ffffff;
+    //margin-bottom: 20px;
+  }
+}
+main{
+  background-color: #29bde0;
+  height: 80vh;
+  .conten {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    max-width:640px;
+    min-width: 320px;
+    background-color: #29bde0;
+    .conten-box {
+      width: 19.46%;
+      text-align: center;
+      background-color: #f5c97b;
+      height: 6rem;
+      Border: 3px solid #ffffff;
+      position: relative;
+      margin: 6% 0 0 9.5%;
+
+      .conten-civilian{
+        line-height: 5rem;
+        font-size: 1.2rem;
+      }
+      .conten-first {
+        background-color: #83b09a;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        color: #ffffff;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+footer{
+  text-align: center;
+  margin: auto;
+  max-width:640px;
+  min-width: 320px;
+  background-color: #29bde0;
+  .landing{
+    height: 70px;
+    width: 66%;
+    margin: auto;
+    font-size: 36px;
+    outline: none;
+    text-decoration: none;
+    color: #fff;
+    background-color: orange;
+    .landing{
+      display: flex;
+      justify-content: center;
+      margin: 6px 0px;
+    }
+    p{
+      line-height: 70px;
+      margin: 0;
+      font-size: 26px;
+    }
+  }
+}
