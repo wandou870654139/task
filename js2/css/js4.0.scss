@@ -1,0 +1,215 @@
+@charset "UTF-8";
+@mixin flex{
+  display: flex;
+  align-items: center;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  max-width: 780px;
+  min-width: 320px;
+  margin: auto;
+  height: 100vh;
+}
+
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 42px;
+  border-bottom: 1px solid white;
+  background: #29bde0;
+  color: white;
+  img{
+    width:15px;
+  }
+  .close{
+    width: 27px;
+  }
+}
+main{
+  padding: 20px 10px 0 10px;
+  background: #f0f0f0;
+  height:calc(100% - 43px);
+  .main-top{
+    line-height: 60px;
+    border-bottom: 1px solid pink;
+    border-radius: 5px;
+    text-align: center;
+    color: #29bde0;
+
+    background: #ffffff;
+    span{
+
+    }
+
+  }
+  .main-mid{
+      border-top: 1px solid #c9c9c9;
+      border-left: 1px solid white;
+      border-right: 1px solid white;
+    padding-bottom: 100px;
+    .style {
+      @include flex;
+      .moon {
+        display: flex;
+        flex-direction: column;
+        p {
+          height: 14px;
+          margin-left: 18px;
+          border-left: 4px solid #c9c9c9;
+        }
+        .empty {
+          width: 22px;
+          height: 40px;
+        }
+        img {
+          width: 2.5rem;
+        }
+      }
+
+      .commonality {
+        @include flex;
+        width: 100%;
+        margin: 0 35px;
+
+
+        span {
+          width: 0;
+          height: 0;
+          border-top: 5px solid transparent;
+          border-right: 10px solid #24A7C6;
+          border-bottom: 5px solid transparent;
+        }
+        .murder{
+          line-height: 40px;
+          border-radius: 5px;
+          text-align: center;
+          width: 100%;
+          color: white;
+          background-color: #24A7C6;
+          cursor: pointer;
+        }
+        .ghost{
+          @extend.murder;
+        }
+        .player{
+          @extend .murder;
+        }
+        .vote{
+          @extend .murder;
+        }
+
+
+      }
+    }
+    .explain{
+      display: none;
+      margin-left: 18px;
+      border-left: 4px solid #c9c9c9;
+      height: 25px;
+      text-align: center;
+    }
+    .tip{
+      display: none;
+      margin-left: 18px;
+      border-left: 4px solid #c9c9c9;
+      height: 25px;
+      text-align: center;
+    }
+  }
+  //.main-mid{
+  //  position: relative;
+  //  border-top: 1px solid #c9c9c9;
+  //  border-left: 1px solid white;
+  //  border-right: 1px solid white;
+  //  .style{
+  //    display: flex;
+  //    align-items: center;
+  //    .moon {
+  //      p{
+  //        height: 13px;
+  //        margin-left: 15px;
+  //        border-left: 4px solid #c9c9c9;;
+  //      }
+  //
+  //      img {
+  //        width: 2.5rem;
+  //      }
+  //    }
+  //
+  //    span {
+  //      width: 0;
+  //      height: 0;
+  //      border-top: 5px solid transparent;
+  //      border-right: 10px solid #24A7C6;
+  //      border-bottom: 5px solid transparent;
+  //    }
+  //
+  //    .empty {
+  //      line-height: 40px;
+  //      border-radius: 5px;
+  //      text-align: center;
+  //      width: 100%;
+  //      color: white;
+  //      background-color: #24A7C6;
+  //    }
+  //  }
+  //
+  //  .content{
+  //    margin-left: 15px;
+  //    text-align: center;
+  //    color: white;
+  //
+  //
+  //    .commonality {
+  //      display: flex;
+  //      align-items: center;
+  //      padding: 13px 32px 0;
+  //      border-left: 4px solid #c9c9c9;
+  //
+  //      span {
+  //        width: 0;
+  //        height: 0;
+  //        border-top: 5px solid transparent;
+  //        border-right: 10px solid #24A7C6;
+  //        border-bottom: 5px solid transparent;
+  //      }
+  //
+  //      p {
+  //        line-height: 40px;
+  //        border-radius: 5px;
+  //        width: 100%;
+  //        background-color: #24A7C6;
+  //      }
+  //    }
+  //  }
+  //
+  //}
+}
+footer{
+  max-width: 780px;
+  min-width: 320px;
+  position: fixed;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  color: white;
+  background: rgba(33, 150, 243, 0.5);
+  .result{
+    margin: 15px;
+    width: 40%;
+    background: orange;
+    text-align: center;
+    line-height: 2.5rem;
+    border-radius: 5px;
+
+  }
+
+}

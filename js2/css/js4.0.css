@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  max-width: 780px;
+  min-width: 320px;
+  margin: auto;
+  height: 100vh; }
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 42px;
+  border-bottom: 1px solid white;
+  background: #29bde0;
+  color: white; }
+  header img {
+    width: 15px; }
+  header .close {
+    width: 27px; }
+
+main {
+  padding: 20px 10px 0 10px;
+  background: #f0f0f0;
+  height: calc(100% - 43px); }
+  main .main-top {
+    line-height: 60px;
+    border-bottom: 1px solid pink;
+    border-radius: 5px;
+    text-align: center;
+    color: #29bde0;
+    background: #ffffff; }
+  main .main-mid {
+    border-top: 1px solid #c9c9c9;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding-bottom: 100px; }
+    main .main-mid .style {
+      display: flex;
+      align-items: center; }
+      main .main-mid .style .moon {
+        display: flex;
+        flex-direction: column; }
+        main .main-mid .style .moon p {
+          height: 14px;
+          margin-left: 18px;
+          border-left: 4px solid #c9c9c9; }
+        main .main-mid .style .moon .empty {
+          width: 22px;
+          height: 40px; }
+        main .main-mid .style .moon img {
+          width: 2.5rem; }
+      main .main-mid .style .commonality {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin: 0 35px; }
+        main .main-mid .style .commonality span {
+          width: 0;
+          height: 0;
+          border-top: 5px solid transparent;
+          border-right: 10px solid #24A7C6;
+          border-bottom: 5px solid transparent; }
+        main .main-mid .style .commonality .murder, main .main-mid .style .commonality .ghost, main .main-mid .style .commonality .player, main .main-mid .style .commonality .vote {
+          line-height: 40px;
+          border-radius: 5px;
+          text-align: center;
+          width: 100%;
+          color: white;
+          background-color: #24A7C6;
+          cursor: pointer; }
+    main .main-mid .explain {
+      display: none;
+      margin-left: 18px;
+      border-left: 4px solid #c9c9c9;
+      height: 25px;
+      text-align: center; }
+    main .main-mid .tip {
+      display: none;
+      margin-left: 18px;
+      border-left: 4px solid #c9c9c9;
+      height: 25px;
+      text-align: center; }
+
+footer {
+  max-width: 780px;
+  min-width: 320px;
+  position: fixed;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: white;
+  background: rgba(33, 150, 243, 0.5); }
+  footer .result {
+    margin: 15px;
+    width: 40%;
+    background: orange;
+    text-align: center;
+    line-height: 2.5rem;
+    border-radius: 5px; }
+
+/*# sourceMappingURL=js4.0.css.map */

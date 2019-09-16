@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>js2.1</title>
+    <link rel="stylesheet" href="../css/js2.1.css">
+    <script src="../../jquery/jquery-3.4.1.js"></script>
+
+</head>
+<body>
+<header>
+    <img onclick="getBack()" class="return" src="../img/less_ Icon.png"/>
+    <span>
+        参数配置
+    </span>
+
+    <img class="help" src="../img/circled-help.png" />
+</header>
+<main>
+    <div class="top">
+<div class="player">
+    玩<br>家<br>配<br>比<br>
+</div>
+    <div class="main-top">
+        <div class="number">
+    <div class="identity">
+
+    <div class="square">
+
+    </div>
+         <span>杀&ensp;&ensp;手</span>
+         <span id="kill_num">1</span>
+         <span>&ensp;&ensp;人</span>
+
+</div>
+    <div class="identity">
+
+        <div class="square">
+
+        </div>
+        <span>平&ensp;&ensp;民</span>
+        <span id="quantity_num">3</span>
+        <span>&ensp;人</span>
+
+
+    </div>
+        </div>
+        <div class="click">
+            点击设置
+        </div>
+    </div>
+    </div>
+    <div class="mid">
+        <div class=" group">
+            平民词组：
+            <input   type="text"  maxlength="11"   placeholder=限输入10个字以内>
+        </div>
+        <div class="group">
+            幽灵词组：  <input  type="text" maxlength="11"  placeholder= 限输入10个字以内>
+        </div>
+
+    </div>
+    <div class="down">
+        <div>
+        <span>玩家人数</span>
+            <input type="text" id="player" value="4" max = "18" min = "4"
+                   onkeyup="this.value=this.value.replace(/\D/g,'')"
+                   onafterpaste="this.value=this.value.replace(/\D/g,'')"
+                   onblur="on_change()">
+            <!--                   把输入的非数字替换为空-->
+<!--           很明显根据词译“onkeyup”=按键抬起触发，“onafterpaste”=粘贴之后触发，
+整体的意思是用于限制只能输入数字的
+ onblur失去焦点-->
+
+        <span>人</span>
+        </div>
+        <div class="slide">
+            <button id="reduce" onclick="less()">
+                -
+            </button>
+            <input type="range" id="slider" max="18" min="4" step="1" value="4"
+            onchange="moveChange()">
+            <button id="add" onclick="plus()">
+                +
+            </button>
+<!--            onchange 事件会在域的内容改变时发生。-->
+        </div>
+    </div>
+</main>
+
+<footer onclick="skip()">
+    去发牌
+</footer>
+
+
+<!--<div></div>-->
+
+</body>
+<script src="../jss/2.1.js"></script>
+</html>

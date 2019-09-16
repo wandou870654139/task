@@ -6,12 +6,12 @@ body {
 
 header {
   display: flex;
-  height: 60px;
-  background-color: #29bde0;
-  color: #FFFFFF;
   justify-content: space-between;
   align-items: center;
-  font-size: 30px; }
+  height: 60px;
+  font-size: 30px;
+  color: #FFFFFF;
+  background-color: #29bde0; }
   header a {
     height: 47px;
     margin: 1%; }
@@ -20,8 +20,8 @@ main {
   background-color: #f0f0f0; }
   main .themes {
     display: flex;
-    background-color: #FFFFFF;
-    margin: 1%; }
+    margin: 1%;
+    background-color: #FFFFFF; }
     main .themes .left {
       display: flex;
       justify-content: center;
@@ -61,10 +61,10 @@ main {
             margin-right: 6px;
             background-color: #29bde0; }
       main .themes .main-right .set {
+        line-height: 70px;
         font-size: 26px;
         color: #29bde0;
-        text-align: center;
-        line-height: 70px; }
+        text-align: center; }
   main .frame {
     padding: 0;
     margin: 1%;
@@ -73,9 +73,9 @@ main {
   main .civilian {
     padding-bottom: 10px;
     padding-top: 10px;
+    margin: 10px 18px 10px 18px;
     border-bottom: 1px solid #d9d9d9;
-    color: #a1a1a1;
-    margin: 10px 18px 10px 18px; }
+    color: #a1a1a1; }
     main .civilian input {
       border: 0;
       height: 28px;
@@ -115,20 +115,20 @@ footer .foot {
       -webkit-appearance: none;
       height: 20px;
       width: 24px;
-      background: #ff0000;
       border-radius: 20%;
-      border: solid 3px #ddd; }
+      border: solid 3px #ddd;
+      background: #ff0000; }
     footer .foot .text .setting {
-      -webkit-appearance: none;
       height: 10px;
       background: #FAB344;
-      border-radius: 10px; }
+      border-radius: 10px;
+      -webkit-appearance: none; }
     footer .foot .text button {
       line-height: 30px;
       width: 30px;
       font-size: 26px;
-      color: #ffc107;
-      padding: 0; }
+      padding: 0;
+      color: #ffc107; }
     footer .foot .text .slide {
       -webkit-appearance: none;
       width: 70%;
@@ -141,10 +141,10 @@ footer .landing {
   display: block;
   line-height: 60px;
   margin: 10px 8px;
-  color: #dfff;
   font-size: 30px;
   text-decoration: none;
   text-align: center;
+  color: #dfff;
   background-color: #ffc107; }
 
 /*# sourceMappingURL=task-2-1.css.map */

@@ -46,8 +46,8 @@
 <div class="reveal slide center" role="application" data-transition-speed="default" data-background-transition="fade">
             <div class="slides" style="width: 960px; height: 700px; left: 50%; top: 50%; bottom: auto; right: auto; transform: translate(-50%, -50%) scale(0.794571);">
                 <section class="present" style="top: 234px; display: block;">
-                    <h2>【JS-task-1】 </h2>
-                    <h4>简述JS中执行环境与作用域的关系</h4>
+                    <h2>【JS-task-2】 </h2>
+                    <h4>常见的dom操作有哪些？</h4>
                     <p style="text-align: center;">分享人：李亚兵</p>
                 </section>
                 <section class="future" style="top: 3px; display: block;" hidden="" aria-hidden="true">
@@ -65,44 +65,71 @@
                     <h3>一、背景介绍</h3>
                 </section>
                 <section class="future" style="top: 190px; display: none;" hidden="" aria-hidden="true">
-                    <p>  书上概念，执行环境定义了变量或者函数有权访问的其他数据，决定了他们各自的行为。每个执行环境都有一个与之关联的变量对象。环境中定义的所有变量和函数都保存在这个对象中。虽然我们在编写代码的时候无法访问这个对象，但解析器在处理数据时会在后台用到它。
-                        　执行环境是一个概念，一种机制，它定义了变量或函数是否有权访问其他数据</p>
+                    <p>什么是DOM？简单地说，DOM是一套对文档的内容进行抽象和概念化的方法在现实世界里，人们对所谓的'世界对象模型'都不会陌生，例如，当用'汽车'、'房子'和'树'等名词来称呼日常生活环境里的事物时，我们都可以百分百的肯定对方知道我们说的是什么，这是因为人们在对这些名词所代表的的东西有着相同的认知。于是，当对别人说"汽车停在车库里"时，可以断定他们不会理解为"小鸟关在壁橱里"
+                        我们的"世界对象模型"不进可以用来描述客观存在的事物，还可以同来描述抽象概念。</p>
                 </section>
                 <section class="future" style="top: 190px; display: none;" hidden="" aria-hidden="true">
-                    <p>执行环境（也称执行上下文–execution context）</p>
-                    <p>当JavaScript解释器初始化执行代码时，它首先默认进入全局执行环境，从此刻开始，函数的每次调用都会创建一个新的执行环境。
-                        每个函数都有自己的执行环境。当执行流进入一个函数时，函数的环境就会被推入一个环境栈中（execution stack）。在函数执行完后，栈将其环境弹出，把控制权返回给之前的执行环境。ECMAScript程序中的执行流正是由这个便利的机制控制着。
-                        执行环境可以分为创建和执行两个阶段。在创建阶段，解析器首先会创建一个变量对象（variable object，也称为活动对象 activation object），它由定义在执行环境中的变量、函数声明、和参数组成。在这个阶段，作用域链会被初始化，this的值也会被最终确定。在执行阶段，代码被解释执行。</p>
+                    <p>例如，假设有个人想我问路，而我给出的答案是"左边第三栋房子"，这个答案有没有意义取决于那个人能够理解"左边"和"第三"的含义。如果他不会数数或者分不清左右，则不管他是否理解这几个概念，我的回答对他都不会有任何的帮助。在现实世界中，正是因为大家对抽象的"世界对象模型"有着基本的共识，人们才能用非常简单的话来表达出复杂的含义并得到对方的理解。
+                        而DOM的定义则是由W3C所制定的标准，定义为"一个与系统平台和编程语言无关的接口，程序和脚本可以通过这个接口动态地访问和修改文档的内容、结构和样式。"
+                    </p>
                 </section>
                 <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
                     <h3>二、知识剖析</h3>
                 </section>
                 <section class="future" style="top: 188px; display: none;" hidden="" aria-hidden="true">
-                    <h3>作用域链</h3>
-                    <p> 作用域链：当代码在环境中执行时，会创建变量对象的一个作用链；作用域链的作用是保证对执行环境有权访问的所有变量和函数的有序访问；</p>
-                    <p> 1.   作用域链的前端：前端，始终都是当前执行代码所在环境的变量对象；</p>
-                    <p> 2.   作用域链的后端：全局执行环境的变量对象始终都是作用域链中的最后一个对象；</p>
-                    <p> 3.   标识符（变量、函数、参数）的解析：是沿着作用域链一级一级地搜索过程；搜索的过程，始终都是从作用域链的前端开始，逐级向后，直到找到标识符为止；搜索到最后一个环境还是找不到的话，就会导致错误发生；</p>
+                    <p> 1. 节点是什么</p>
+                    <p>节点这个词是一个网络用语，代表了网络中的一个连接点。一个网络就是由一些节点构成的集合。
+                在现实世界中，一切事物都由原子构成。原子就是现实世界的节点。但是原子同样还可以进一步分解为更细小的亚原子微粒。这些亚原子微粒同样也是节点。
+                DOM也是同样的情况。文档是由节点构成的集合，只不过此时的节点是文档树上的树枝和树叶而已。
+                        在DOM中有许多不同类型的节点。就像原子包含着亚原子微粒那样，也有很多类型的DOM节点包含着其他类型的节点。接下来我们先看看其中的三种：元素节点、文本节点和属性节点。</p>
+                </section>
+                <section class="future" style="top: 188px; display: none;" hidden="" aria-hidden="true">
+                    <p>2. 元素节点</p>
+                    <p> 像是我们现在所看到的这个网页，我们在编写时，会用到诸如body、head、p这些元素。如果把Web上的文档比作一座大厦，那么元素就是建造这座大厦的砖块，这些元素在在文档中的布局形成了文档的结构。
+                    元素可以包含其他的元素，在我们所看到的页面页中，内容都被包含在在一个section元素的内部。而唯一没有被包含在其他元素中的唯一元素是'html'，
+                    他和我们的节点树的根元素，其他的所有元素都被包含在'html'中。
+                </p>
+                </section>
+                <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
+                   <img src="test/img/FQM0{JOT$2UYT}QE)KCIK89.png" height="665" width="829"/>
+                </section>
+                <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
+                    <p>3. 文本节点</p>
+                    <p>元素节点只是节点类型的一种。如果一份文档完全有一些空白元素构成，他将有一个结构，但这份文档本身将不会包含什么内容。
+                        在我们的ppt首页中，'<p>'元素包含着文本，'分享人：刘洪利'。他就是一个文本节点。在html文档里，文本节点总是被包含在元素节点的内部。</p>
+                </section>
+                <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
+                   <p>4. 属性节点</p>
+                    <p> 属性节点用来对元素做出更具体的描述。例如，几乎所有的元素都有一个title属性，而我们可以利用这个属性对包含在元素里的东西做出准确的描述：'<p title="a gentle reminder">这是一个带有温馨提示的p标签</p>'
+                    在DOM中，title="a gentle reminder"是一个属性节点。因为属性总是被放在起始标签里，所以属性节点总是被包含在元素节点中。并非所有的标签都包含着属性，但是所有的属性都被元素包含。</p>
+                </section>
+                <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
+                    <img src="test/img/%4K(RM]@E`16EO`OLEY8{UN.png" height="489" width="762"/>
+                </section>
+                <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
+                    <p>DOM事件</p>
+                    <p> onclick事件---当用户点击时执行</p>
+                    <p>onload事件---当用户进入时执行</p>
+                    <p>onunload事件---用用户离开时执行</p>
+                    <p>onmouseover事件---当用户鼠标指针移入时执行</p>
+                    <p>onmouseout事件---当用户鼠标指针移出时执行</p>
+                    <p>onmousedown事件---当用户鼠标摁下时执行</p>
+                    <p>onmouseup事件---当用户鼠标松开时执行</p>
                 </section>
                 <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
                     <h3>三、常见问题</h3>
                 </section>
                 <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
-                    js中执环境和作用域的区别在哪里?
+                    <p>获取dom节点有哪些？</p>
                 </section>
                 <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
                         <h3>四、解决办法</h3>
                 </section>
                 <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
-                    <p>执行环境：执行环境是JS中最重要的一个概念；它定义了变量和函数有权访问的其他数据；2.全局执行环境：
-                        最外围的一个执行环境，根据ECMAScript实现所在的宿主环境不同而不同，在Web浏览器中，全局执行环境被认为是window对象；</p>
-                </section>
-                <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
-                    <p>什么是作用域呢？</p>
-                        <p>每个函数都有自己的执行环境，当代码在执行环境中执行时，就会创建变量对象的作用域链。作用域链保证了对执行环境有权访问所有变
-                        量和函数的有序访问。作用域链的前端，始终都是当前执行的代码所在的环境的变量对象，如果环境是一个函数，那么它的变量对象就是
-                        该函数的活动对象。作用域链的下一个变量对象来自包含（外部）环境，再下一个变量对象来自下一个包含环境。这样一直延续到全局执行
-                        环境，记住，全局执行环境的变量对象永远是作用域中的最后一个对象。</p>
+                    <p>通过使用 getElementById() 方法匹配元素的id属性来访问元素节点，对元素节点进行操作</p>
+                    <p>通过使用 getElementsByTagName() 方法匹配元素的tagName来访问元素节点，对元素节点进行操作</p>
+                    <p>通过使用 getElementsByClassName() 方法匹配元素的className来访问元素节点，对元素节点进行操作</p>
+                    lementsByClassName() 这两种方法因为其访问的是节点中的可能为复数的属性，所以得到的会是一个以数组的形式来体现出来的元素节点集合，我们可以通过打印获取到的DOM节点来判断类型</p>
                 </section>
                 <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
                     <h3>五、编码实战</h3>
@@ -111,17 +138,16 @@
                     <h3>六、拓展思考</h3>
                 </section>
                 <section class="future" style="top: 178px; display: none;" hidden="" aria-hidden="true">
-                    <p>执行环境和作用域是一回事吗？</p>
-                    <p>作用域和执行环境是两个完全不同的概念，我们试图给他俩分别一个明确的定义，发现很难，因为你很难定义一个概念“是什么”，但是我们可以搞
-                        清楚他们分别起什么作用。另一个令人迷惑的地方就是js中的this关键字。其实执行环境就是this的值。总的来说，作用域是相对于函数来讲的，因
-                        为ES5 里没有块级作用域，只有函数才能形成新的作用域。而且作用域在函数声明时就定义好了。</p>
+                    <p> 绑定事件的方式有哪些</p>
+                    <p>方式一：直接绑定匿名函数</p>
+                    <p>方式二：先单独定义函数，再绑定</p>
+                    <p>方式三：行内绑定</p>
                 </section>
                 <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
                 <h3>七、参考文献</h3>
                 </section>
                 <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
-                    <p>Javascript高级程序语言设计，俗称红宝书</p>
-                    <p>原生JS执行环境与作用域深入理解</p>
+                   <p>老大博客，常见的DOM操作有哪些？</p>
                 </section>
                 <section class="future" style="top: 267px; display: none;" hidden="" aria-hidden="true">
                     <h3>八、更多讨论</h3>

@@ -22,79 +22,36 @@ main {
   max-width: 780px;
   min-width: 320px;
   margin: auto;
-  margin-bottom: 5rem;
+  height: 20rem;
+  background-color: #29bde0;
   .blue {
     position: relative;
-    padding-top: 10rem;
+    padding-top: 14rem;
     width: 100%;
-    background-color: #29bde0;
-   img {
-     height: 9rem;
-     width: 16rem;
-     position: absolute;
-     transform: translate(-50%,-50%);
-     top: 6rem;
-     left: 50%;;
-    }
-    .content {
-      width: 75%;
-      margin: auto;
-      color: #ffc865;
-      .content-b {
-        font-size: 1.2rem;
-      }
-
-      .content-t {
-        font-size: 1rem;
-        color: #ffffff;
-        margin: 0;
-      }
-
-      .content-q {
-        color: #ffffff;
-        font-size: 1rem;
-        p {
-          margin: 0;
-        }
-      }
-
-
+    img {
+      height: 9rem;
+      width: 16rem;
+      position: absolute;
+      transform: translate(-50%,-50%);
+      top: 6rem;
+      left: 50%;;
     }
   }
-    .list {
-      width: 75%;
-      margin: auto;
-      border-bottom: 1px solid #f0f0f0;
-      .first {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-
-        .hour {
-          font-size: 1rem;
-          color: #e0e0e0;
-        }
-      }
-
-      .night {
-        font-size: 1rem;
-        color: #bcbcbc;
-      }
+  .column-people{
+    width: 60%;
+    margin: auto;
+    color: #fff;
+    p{
+      margin: 6px;
     }
   }
-
-//.house {
-//  height: 4vw;
-//  width: 4vw;
-//  margin-left: 2vw;
-//}
-//
-//.plaint {
-//  height: 4vw;
-//  width: 4vw;
-//  margin-right: 2vw;
-//}
-
+}
+  .number{
+    padding: 0 3.5rem;
+    font-size: .8rem;
+    color: cadetblue;
+    border-bottom: solid 1px #ddd;
+  }
 footer {
   width: 100%;
   max-width: 780px;
@@ -102,19 +59,31 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: #29bde0;
-  height: 60px;
+  height: 4rem;
   color: #fff;
   position: fixed;
   bottom: 0;
+  background: rgba(41, 189, 224, 0.5) none repeat scroll !important;
   margin: auto;
-  button{
-    width: 45%;
-    line-height: 50px;
+  .left {width: 100%;
+    line-height: 2.7rem;
+    border-radius: 5px;
+    margin: 0.24rem;
+    font-size: 15px;
+    color: #fff;
     text-align: center;
-    background: orange;
-    border-radius: 10px;
-    cursor: pointer;
+    text-decoration: none;
+    background-color: #f66f6f;
+  }
+  .right{
+    width: 100%;
+    line-height: 2.7rem;
+    border-radius: 5px;
+    margin: 0.24rem;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    background-color: #fbb435;
   }
 }
-a{ text-decoration:none}

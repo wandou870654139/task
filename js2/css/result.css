@@ -1,0 +1,112 @@
+@charset "UTF-8";
+body {
+  max-width: 780px;
+  min-width: 320px;
+  margin: 0 auto;
+  background-size: 100%;
+  background: white;
+  bottom: 0px;
+  padding-bottom: 87px; }
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+  color: white;
+  background: #29bde0;
+  border-bottom: 1px solid #74d4eb; }
+  header a {
+    padding-left: 2%; }
+  header img {
+    width: 32px;
+    padding-right: 2%; }
+
+main {
+  background: #ffffff; }
+  main .main-box {
+    padding: 10px 0;
+    background: #29bde0; }
+    main .main-box .cup {
+      text-align: center; }
+      main .main-box .cup #result {
+        position: absolute;
+        top: 19.5vh;
+        left: 43vw;
+        color: pink; }
+      main .main-box .cup img {
+        width: 175px;
+        height: 123px; }
+    main .main-box .main-mid {
+      padding: 0 5%;
+      height: 78px;
+      color: #ffc865;
+      font-size: 20px;
+      margin: 0;
+      background: #29bde0; }
+    main .main-box p {
+      margin: 9px 0;
+      padding-left: 5%;
+      color: white;
+      font-size: 17px; }
+    main .main-box .time {
+      display: flex;
+      justify-content: space-between; }
+    main .main-box .identity {
+      display: flex;
+      padding-left: 5%;
+      flex-flow: wrap;
+      color: white; }
+      main .main-box .identity span {
+        flex: 0 1 33.33%; }
+  main .day {
+    padding-left: 5%;
+    font-size: 17px;
+    color: #515151;
+    border-top: 1px solid pink; }
+  main span {
+    padding-left: 5%;
+    font-size: 17px;
+    color: #515151; }
+  main .hour {
+    padding-left: 50%;
+    color: #d5d5d5;
+    font-size: 14px; }
+  main p {
+    padding-left: 5%;
+    width: 95%;
+    color: #a6a6a6; }
+
+footer {
+  display: flex;
+  align-items: center;
+  max-width: 780px;
+  min-width: 320px;
+  justify-content: space-evenly;
+  position: fixed;
+  /*固定定位*/
+  bottom: 0;
+  width: 100%;
+  height: 86px;
+  justify-content: space-evenly;
+  background-color: rgba(155, 223, 240, 0.5);
+  /*透明度rgba*/ }
+  footer a {
+    height: 60px;
+    width: 35%;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 8px;
+    background: #f66f6f;
+    color: white;
+    text-decoration: none; }
+  footer p {
+    height: 60px;
+    width: 35%;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 8px;
+    background: #fbb435;
+    color: white; }
+
+/*# sourceMappingURL=result.css.map */

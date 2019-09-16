@@ -1,0 +1,188 @@
+@charset "UTF-8";
+@mixin flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+    $color:#69d1e9;
+
+body{
+  position: relative;
+  min-width: 320px;
+  max-width: 780px;
+  margin: 0 auto;
+  /*居中*/
+  overflow: hidden!important;
+  /*主体移动，但超出部分隐藏，就不会出现横向滚动条*/
+  background-size: 100%;
+  background: #f0f0f0;
+}
+.max-box{
+  min-width: 320px;
+  max-width: 780px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+#sidemenu{
+  display: none;
+}
+#sidemenu:checked + aside {
+  /*为被选中的sidemenu后的aside设置属性（紧邻）*/
+  left: 0;
+  /*点击按钮即选中checked后,侧边栏位置变为贴着左边,配合ease-out使用,有渐变滑出的效果*/
+  display: block;
+}
+#sidemenu:checked ~ .wrap {
+  padding-left: 50%;
+  margin-right: -50%;
+  /*为被选中的sidemenu后的wrap设置属性（非紧邻）*/
+}
+#sidemenu:checked ~ .max-box{
+  background: red;
+}
+ aside {
+   display: none;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   /*侧边栏,初始位置为-50%，即隐藏效果*/
+   left: -50%;
+   width: 50%;
+   background: #ffffff;
+   transition: 0.2s ease-out;
+   /*动画效果的执行方式是ease-out，即侧边栏滑动效果为渐变式，而不是生硬的突然变化*/
+   ul{
+     margin: 60px 0;
+   }
+   li {
+     display: flex;
+     align-items: center;
+     width: 100%;
+     height: 1.8em;
+     list-style: none;
+     color: #29bde0;
+     font-size: 18px;
+     border-bottom: 1px solid;
+     span{
+       width: 80%;
+       padding-left: 10%;
+     }
+     img{
+       width: 20px;
+     }
+   }
+
+   a {
+     text-decoration: none;
+   }
+
+ }
+ /*以上侧边栏*/
+  .wrap {
+  transition: 0.2s ease-out;
+   }
+  header {
+    background: $color;
+    label {
+      /*控制侧边栏进出的按钮*/
+      text-align: center;
+      display: inline-block;
+      width: 4rem;
+      height:3rem;
+      line-height: 3rem;
+      cursor: pointer;
+      font-family: Courier New;
+      font-size: 55px;
+      color: white;
+    }
+  }
+
+           .content-top{
+         @include flex;
+             position: relative;
+             margin: 10px 20px;
+             height: 70px;
+             border: 1px solid #c9c9c9;
+
+             color: #c9c9c9;
+             background: white;
+
+      span{
+        display: block;
+         line-height: 44px;
+        border-bottom: 1px solid #fbb435;
+         color: #fbb435;
+
+      }
+             img {
+               position: absolute;
+              right: 10px;
+             }
+   }
+
+  .versions {
+    position: relative;
+    text-align: -webkit-center;
+    background: #ffffff;
+    margin: 0 20px;
+    .game{
+      display: block;
+      line-height: 50px;
+      color: #fbb435;
+      border-bottom: 1px solid #fbb435;
+    }
+    p {
+      line-height: 90px;
+      margin-left: 20px;
+      margin-right: 20px;
+      width: 80%;
+      color: white;
+      font-size: 19px;
+      border-radius: 10px;
+      cursor: pointer;
+      background: #69d1e9;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+    }
+    span{
+      color: #919191;
+      margin: 0px;
+    }
+
+    img{
+      position: absolute;
+      /*子元素绝对定位*/
+      right: 3%;
+      margin-top:62px;
+      height: 44px;
+      width: 25px
+    }
+
+    footer {
+      display: flex;
+      justify-content: center;
+      padding-bottom: 5px;
+   span{
+      width: 15px;
+      height: 15px;
+     margin: 5px;
+      border-radius: 50%;
+      background: #f0f0f0;
+     /*底部4个圆点*/
+     &:hover  {
+       background:$color;
+     }
+    }
+    }
+  }
+@media (max-width: 500px){
+  .versions>img{
+    right: 1%;
+    margin-top: 65px;
+    width: 19px;
+  }
+
+}

@@ -71,15 +71,12 @@ function person() {
             brr.push(arr1[temp]);
             arr1.splice(temp, 1);
         }
-        //
-        data=brr;
+        arr=brr;
     }
     test();
     randomId();
 }
-function login() {
-    localStorage.setItem('weekDay',JSON.stringify(data));
-}
+    localStorage.setItem('weekDay',JSON.stringify(arr));
 
 
 

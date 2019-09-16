@@ -85,23 +85,16 @@ footer{
   height: 166px;
   background-color: #29bde0;
   .landing{
-    height: 70px;
     width: 66%;
     margin: auto;
-    font-size: 36px;
-    outline: none;
-    text-decoration: none;
+    font-size: 1.27rem;
     color: #fff;
     background-color: orange;
+    line-height: 0.4rem;
     .landing{
       display: flex;
       justify-content: center;
       margin: 6px 0px;
-    }
-    p{
-      line-height: 70px;
-      margin: 0;
-      font-size: 26px;
     }
   }
 }

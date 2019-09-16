@@ -1,0 +1,163 @@
+@charset "UTF-8";
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  margin: auto;
+  min-width: 320px;
+  max-width: 780px;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+  color: white;
+  font-size: 22px;
+  background: #29bde0;
+
+  img {
+    cursor: pointer;
+    height: 41px;
+    width: 25px;
+    padding-left: 1rem;
+  }
+
+  .help {
+    height: 47px;
+    width: 47px;
+    padding-right: 1rem;
+  }
+}
+
+main {
+  .top {
+    display: flex;
+    margin: 13px;
+    background: #ffffff;
+
+    .player {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 20%;
+      height: 20rem;
+      border: 2px solid #cecece;
+      font-size: 20px;
+      background: #ffffff;
+    }
+
+    .main-top {
+      width: 80%;
+      border: 1px solid #cecece;
+
+      .number {
+        display: flex;
+        justify-content: space-around;
+        height: 80%;
+        border-bottom: 2px solid #cecece;;
+
+        .identity {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 18rem;
+          font-size: 18px;
+          color: #a1a1a1;
+
+          .square {
+            width: 9px;
+            height: 7px;
+            margin-right: 9px;
+            background: #FAB344;
+          }
+        }
+      }
+
+      .click {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20%;
+        color: #29bde0;
+      }
+    }
+  }
+
+  .mid {
+    margin: 13px;
+    font-size: 12px;
+    background: #ffffff;
+
+    .group {
+      margin-left: 14px;
+      line-height: 60px;
+      border-bottom: 1px solid #cecece;
+      color: #a1a1a1;
+
+      input {
+        border: none;
+        outline: none;
+      }
+    }
+  }
+
+  .down {
+    margin: 13px;
+    height: 80px;
+    background: #ffff;
+    input[type="text"]{
+      width: 40px;
+      outline: none;
+      -webkit-appearance: none;
+      border: none;
+      font-size: 18px;
+      color: orange;
+    }
+    .slide {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    button{
+      text-align: center;
+      height: 2rem;
+      width: 2rem;
+      font-size: 1.5rem;
+      color: orange;
+    }
+
+      input[type="range"] {
+        -webkit-appearance: none;
+        //移除默认样式
+        height: 10px;
+        width: 50%;
+        outline: none;
+        background: orange;
+      }
+      input[type=range]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        height: 25px;
+        width: 25px;
+        margin-top: -5px; /*使滑块超出轨道部分的偏移量相等*/
+        background: url("../img/cang.jpg") no-repeat center;
+        border: solid 0.125em rgba(205, 224, 230, 0.5); /*设置边框*/
+        box-shadow: 0 .125em .125em #3b4547; /*添加底部阴影*/
+        background-size: 100% 100%;
+      }
+    }
+  }
+}
+footer{
+  display: flex;
+  margin: 3rem 13px;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  color: #ffffff;
+  background: #fab344;
+  border-radius: 7px;
+  cursor: pointer;
+}

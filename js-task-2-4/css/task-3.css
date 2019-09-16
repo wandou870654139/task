@@ -75,21 +75,15 @@ footer {
   height: 166px;
   background-color: #29bde0; }
   footer .landing {
-    height: 70px;
     width: 66%;
     margin: auto;
-    font-size: 36px;
-    outline: none;
-    text-decoration: none;
+    font-size: 1.27rem;
     color: #fff;
-    background-color: orange; }
+    background-color: orange;
+    line-height: 0.4rem; }
     footer .landing .landing {
       display: flex;
       justify-content: center;
       margin: 6px 0px; }
-    footer .landing p {
-      line-height: 70px;
-      margin: 0;
-      font-size: 26px; }
 
-/*# sourceMappingURL=task-3-2.css.map */
+/*# sourceMappingURL=task-3.css.map */
