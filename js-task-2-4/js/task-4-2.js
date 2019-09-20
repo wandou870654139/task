@@ -28,34 +28,35 @@ $(".column").append(`
 <p class="column-civilian">平&emsp;民${livingCivilianNum}人</p>
  </div>
 `);
-for (var n = 1;n <playDay;n++) {
+for (var n = 1;n <=playDay;n++) {
     $(".submenu").append(`
 <div class="number day-${n}">
     <p class="number-day">第<span >${n}</span>天</p>
-    <p class="number-night "></p>
+    <p class="number-night"></p>
 <p class="number-daytime"></p>
 </div>
 `);
 }
 //插入游戏日志，把每天死人放到相应的位置
 for (i=0;i<arr.length;i++) {
-    if (arr[i].state==="sie") {//找出死亡的玩家
-        if (arr[i].day % 1===0.5) {//判断为杀手杀死的
-            pastDay=parseInt(arr[i].day);//判断是哪天杀死的
+    if (arr[i].state === "sie") {//找出死亡的玩家
+        if (arr[i].day % 1 === 0.5) {//判断为杀手杀死的
+            pastDay = parseInt(arr[i].day);//判断是哪天杀死的
             console.log(pastDay);
-            pastDayBoxClass="day-"+pastDay;//放入到对应的天数页面下
-            $("."+pastDayBoxClass).children(".number-night").append(`
+            pastDayBoxClass = "day-" + pastDay;//放入到对应的天数页面下
+            $("." + pastDayBoxClass).children(".number-night").append(`
 晚上：<span class="deader-num">${arr[i].num}</span>被杀手杀死，真实身份是<span class="deader-role">${arr[i].name}</span>`)
         }
-        else {
-            console.log((arr[i].day % 1).toFixed(1));
-            if ((arr[i].day % 1).toFixed(1)==="0.8") {//判断为全民投票杀死的//知识点四js浮点型计算
-                pastDay=parseInt(arr[i].day);//判断是哪天杀死的
-                console.log(pastDay);
-                pastDayBoxClass="day-"+pastDay;//放入到对应的天数页面下
-                $("."+pastDayBoxClass).children(".number-daytime").append(`
+    }
+};
+for (i = 0; i < arr.length; i++) {
+    if (arr[i].state === "sie") {//找出死亡的玩家
+        if ((arr[i].day % 1).toFixed(1) === "0.8") {//判断为全民投票杀死的//知识点四js浮点型计算
+            pastDay = parseInt(arr[i].day);//判断是哪天杀死的
+            console.log(pastDay);
+            pastDayBoxClass = "day-" + pastDay;//放入到对应的天数页面下
+            $("." + pastDayBoxClass).children(".number-daytime").append(`
 白天：<span class="deader-num">${arr[i].num}</span>被投票杀死，真实身份是<span class="deader-role">${arr[i].name}</span>`)
             }
         }
     }
-};

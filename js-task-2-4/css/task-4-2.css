@@ -15,7 +15,8 @@ header {
   header img {
     height: 2.2rem;
     width: 2.2rem;
-    margin: 0 .4rem; }
+    margin: 0 .4rem;
+    padding-top: 0.4rem; }
 
 main {
   max-width: 780px;

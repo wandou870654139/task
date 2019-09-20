@@ -22,23 +22,24 @@ function setRem(){
 }
 setRem(); //运行脚本setRem
 window.onresize=setRem;  //监听屏幕变化
-// $(function() {
-//     $("#return").click(function () {
-//         if (window.confirm('要返回查看身份页面？')) {
-//             window.location = "../html/task-2-2.html"
-//         } else {
-//             return false;//事件处理函数会取消事件，不再继续向下执行
-//         }
-//     });
-// //点击返回游戏页面
-//     $("#fork").click(function () {
-//         if (window.confirm('兄弟,你是要退出游戏么？')) {
-//             window.location = "../html/task-2-2.html"
-//         } else {
-//             return false;//事件处理函数会取消事件，不再继续向下执行
-//         }
-//     });
-// });
+$(function() {
+    $("#return").click(function () {
+        if (window.confirm('要返回查看身份页面？')) {
+            window.location = "../html/task-2-2.html"
+        } else {
+            return false;//事件处理函数会取消事件，不再继续向下执行
+        }
+    });
+//点击返回游戏页面
+    $("#fork").click(function () {
+        if (window.confirm('兄弟,你是要退出游戏么？')) {
+            sessionStorage.clear();
+            window.location = "../html/task-2-2.html"
+        } else {
+            return false;//事件处理函数会取消事件，不再继续向下执行
+        }
+    });
+});
 
 //生成杀人的盒子
 function test(){
@@ -80,13 +81,13 @@ $(".examine").click(function () {
                 alert("所长别开枪，是我");
             } else {
                 //如果不是杀手，即是平民，则使它的生存状态改变。
-                arr[q].state = "sie";
+                       arr[q].state = "sie";
                 //改变天数属性，以便于标记什么时刻杀死，即标记为杀手杀死
                 arr[q].day = playNow;
                 //储存新数组;//将改变的数组的保存到浏览器。
                 sessionStorage.setItem("playernum", JSON.stringify(arr));
                 console.log(arr);
-                window.location.href = "task-4-3.html";
+                result()
             }
         }
         else{//当再全民投票时运行
@@ -134,32 +135,20 @@ function result() {
             livingCivilianNum++;
         }
     }
-    console.log(livingKillerNum);
-    console.log(livingCivilianNum);
+    // console.log(livingKillerNum);
+    // console.log(livingCivilianNum);
     sessionStorage.setItem("livingKillerNum", JSON.stringify(livingKillerNum));
     sessionStorage.setItem("livingCivilianNum", JSON.stringify(livingCivilianNum));
-    switch (true) {
-        case livingKillerNum === 0 :
-            //若杀手死完则，平民胜利
-            alert("平民胜利");
-            //跳转到游戏结果日志页面。
-            location.href = "../html/task-4-3.html";
-            break;
-        //判断投票后，但平民=1，若杀手＞1，则为杀手必胜利
-        case livingKillerNum > 1 && livingCivilianNum === 1 :
-            alert("杀手胜利");
-            //跳转到游戏结果日志页面。
-            location.href = "../html/task-4-2.html";
-            break;
-        //判断与投票后，若杀手=平民，则杀手赢，为了排除第一个判断的影响，加上livingKillerNum===1。
-        case livingKillerNum === livingCivilianNum && playProcess === 0 :
-            alert("杀手胜利");
-            //跳转到游戏结果日志页面。
-            location.href = "../html/task-4-2.html";
-            break;
-        default:
-            //跳转到游戏进程控制页面。
-            location.href = "../html/task-4-3.html";
 
+    console.log('杀手',livingKillerNum);
+    console.log('平民',livingCivilianNum);
+    if (livingKillerNum === 0){
+        alert('平民胜利');
+        window.location.href = "task-4-2.html";
+    } else if (livingKillerNum === livingCivilianNum) {
+        alert('杀手胜利');
+        window.location.href = "task-4-2.html";
+    }else {
+        window.location.href = "task-4-3.html";
     }
 };

@@ -29,7 +29,7 @@ header {
   border-left: 10px solid transparent;
   border-right: 9px solid transparent;
   border-top: 15px solid rgba(255, 255, 255, 0.6);
-  margin-left: 63px; }
+  margin-left: 64px; }
 
 .nav-explain {
   margin-left: 66px;
@@ -38,10 +38,10 @@ header {
 
 .blue {
   background-color: #29bde0;
-  height: 114vh; }
+  height: 94vh; }
 
 main {
-  margin: 2.4rem 0 4.4rem 0;
+  margin: 2.4rem 0 3.4rem 0;
   background-color: #29bde0;
   display: flex;
   flex-wrap: wrap; }

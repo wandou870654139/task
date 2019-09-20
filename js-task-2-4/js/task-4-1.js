@@ -30,6 +30,8 @@ $(function(){
 //点击返回游戏页面
     $("#fork").click(function () {
         if (window.confirm('确定退出游戏？')) {
+            console.log('xxxxxx');
+            // sessionStorage.clear();
             window.location = "../html/task-2-2.html"
         } else {
             return false;
