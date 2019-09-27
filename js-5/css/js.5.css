@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  height: 98vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/background.png) no-repeat center 0;
+  background-size: 100%; }
+
+.page-text {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  margin: auto;
+  font-size: 1.2rem;
+  color: #03aae9; }
+
+.page {
+  width: 23rem;
+  height: 16rem;
+  background-color: #f0f0f0;
+  opacity: 0.8; }
+  .page .phone {
+    display: flex;
+    align-items: center;
+    width: 18rem;
+    margin: auto;
+    margin-top: 1.2rem;
+    background-color: #ffffff; }
+  .page .lock {
+    display: flex;
+    align-items: center;
+    width: 18rem;
+    margin: auto;
+    margin-top: 1.2rem;
+    background-color: #ffffff; }
+  .page img {
+    margin: .5rem .5rem;
+    height: 1.6rem;
+    width: 1.6rem; }
+  .page input {
+    width: 16rem;
+    height: 1.2rem;
+    border: none;
+    outline: none;
+    border-left: 1px solid #d9d9d9; }
+  .page p {
+    color: red;
+    height: 12px;
+    font-size: 12px;
+    text-align: center; }
+  .page .page-a {
+    display: flex;
+    justify-content: center; }
+    .page .page-a button {
+      height: 2.6rem;
+      width: 18rem;
+      color: #fff;
+      text-align: center;
+      border-radius: 8px;
+      background-color: #03a9f4; }
+
+/*# sourceMappingURL=js.5.css.map */
